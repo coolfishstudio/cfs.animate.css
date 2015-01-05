@@ -20,7 +20,6 @@
 	90%{
 		-webkit-transform: translateX(5px);
 	}
-	}
 	100%{
 		-webkit-transform: translateX(0px);
 	}
@@ -40,7 +39,6 @@
 	}
 	90%{
 		transform: translateX(5px);
-	}
 	}
 	100%{
 		transform: translateX(0px);
