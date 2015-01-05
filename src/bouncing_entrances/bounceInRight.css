@@ -1,0 +1,48 @@
+.bounceInRight{
+	animation-name: bounceInRight;
+	animation-duration: 0.75s;
+	-webkit-animation-name: bounceInRight;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes bounceInRight{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(300px);
+	}
+	60%{
+		opacity: 1;
+		-webkit-transform: translateX(-20px);
+	}
+	75%{
+		-webkit-transform: translateX(10px);
+	}
+	90%{
+		-webkit-transform: translateX(-5px);
+	}
+	}
+	100%{
+		-webkit-transform: translateX(0px);
+	}
+}
+
+@keyframes bounceInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(300px);
+	}
+	60%{
+		opacity: 1;
+		transform: translateX(-20px);
+	}
+	75%{
+		transform: translateX(10px);
+	}
+	90%{
+		transform: translateX(-5px);
+	}
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
