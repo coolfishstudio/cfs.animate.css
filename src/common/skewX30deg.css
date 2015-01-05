@@ -1,0 +1,24 @@
+.skewX30deg{
+	animation-name: skewX30deg;
+	animation-duration: 0.75s;
+	-webkit-animation-name: skewX30deg;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes skewX30deg{
+	0%{
+		-webkit-transform: skewX(0deg);
+	}
+	100%{
+		-webkit-transform: skewX(30deg);
+	}
+}
+
+@keyframes skewX30deg{
+	0%{
+		transform: skewX(0deg);
+	}
+	100%{
+		transform: skewX(30deg);
+	}
+}

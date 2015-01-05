@@ -1,0 +1,24 @@
+.translateBottom{
+	animation-name: translateBottom;
+	animation-duration: 0.75s;
+	-webkit-animation-name: translateBottom;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes translateBottom{
+	0%{
+		-webkit-transform: translateY(0);
+	}
+	100%{
+		-webkit-transform: translateY(100px);
+	}
+}
+
+@keyframes translateBottom{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(100px);
+	}
+}

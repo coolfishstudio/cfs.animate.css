@@ -1,0 +1,24 @@
+.rotateX60deg{
+	animation-name: rotateX60deg;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotateX60deg;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotateX60deg{
+	0%{
+		-webkit-transform: perspective(800px) rotateX(0deg);
+	}
+	100%{
+		-webkit-transform: perspective(800px) rotateX(60deg);
+	}
+}
+
+@keyframes rotateX60deg{
+	0%{
+		transform: perspective(800px) rotateX(0deg);
+	}
+	100%{
+		transform: perspective(800px) rotateX(60deg);
+	}
+}

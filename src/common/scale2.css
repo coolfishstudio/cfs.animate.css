@@ -1,0 +1,24 @@
+.scale2{
+	animation-name: scale2;
+	animation-duration: 0.75s;
+	-webkit-animation-name: scale2;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes scale2{
+	0%{
+		-webkit-transform: scale(1);
+	}
+	100%{
+		-webkit-transform: scale(2);
+	}
+}
+
+@keyframes scale2{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(2);
+	}
+}

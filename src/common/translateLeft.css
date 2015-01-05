@@ -1,0 +1,24 @@
+.translateLeft{
+	animation-name: translateLeft;
+	animation-duration: 0.75s;
+	-webkit-animation-name: translateLeft;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes translateLeft{
+	0%{
+		-webkit-transform: translateX(0);
+	}
+	100%{
+		-webkit-transform: translateX(100px);
+	}
+}
+
+@keyframes translateLeft{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(100px);
+	}
+}
