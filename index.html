@@ -20,7 +20,7 @@
 			.box .category{width: 1000px;float: left; height: 30px;background: #eee;padding-left: 30px;line-height: 30px;border-left: 10px #ddd solid;}
 			.box .list{width:200px;float: left; height: 180px;border: 1px #eee solid;}
 			.box .content{width: 100%;height: 140px;line-height: 100px;text-align: center;cursor: pointer;}
-			.box .title{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 12px;color:#aaa;}
+			.box .title{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 12px;color:#666;}
 		</style>
 
 		<!-- 运动库 -->
@@ -46,7 +46,7 @@
 				};
 
 				/* 点击查看样式 */
-				$('.list').on('click',function(){
+				$('.box').delegate('.list', 'click', function(){
 					var _this = $(this);
 					if(_this.find('.content span').hasClass(_this.find('.title span').html())){
 						_this.find('.content span').removeClass(_this.find('.title span').html());
@@ -59,8 +59,14 @@
 					}
 				});
 
-
-				
+				/* 生成列表 */
+				for(var name in objJson){
+					$('#box').append('<div class="category">' + name + '</div>');
+					for(var i = 0; i < objJson[name].length; i++){
+						var objHtml = '<div class="list"><div class="title"><span>' + objJson[name][i] + '</span></div><div class="content" style="color:' + randomRGB() + '"><span>CFS.ANIMATE.CSS</span></div></div>';
+						$('#box').append(objHtml);
+					}
+				}
 				function randomRGB(){
 					return '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6);
 				}
@@ -73,44 +79,9 @@
 			<hr>
 			<span>css3运动库</span>
 		</div>
-		<div class="box">
-			<div class="category">
-				常见运动
-			</div>
-			<div class="list">
-				<div class="title">
-					<span>rotate30deg</span>
-				</div>
-				<div class="content">
-					<span>CFS.ANIMATE.CSS</span>
-				</div>
-			</div>
-			<div class="list">
-				<div class="title">
-					<span>rotate45deg</span>
-				</div>
-				<div class="content">
-					<span>CFS.ANIMATE.CSS</span>
-				</div>
-			</div>
-			<div class="list">
-				<div class="title">
-					<span>rotate90deg</span>
-				</div>
-				<div class="content">
-					<span>CFS.ANIMATE.CSS</span>
-				</div>
-			</div>
-			<div class="category">
-				弹跳
-			</div>
-			<div class="list">
-				<div class="title">
-					<span>bounceIn</span>
-				</div>
-				<div class="content">
-					<span>CFS.ANIMATE.CSS</span>
-				</div>
-			</div>
+		<div class="box" id="box">	
 		</div>
+		<footer style="text-align:center;font-size:12px;">
+	        <p>© 2015 Yves 461836324@qq.com</p>
+	    </footer>
 </html>
