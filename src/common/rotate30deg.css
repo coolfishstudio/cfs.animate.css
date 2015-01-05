@@ -1,0 +1,24 @@
+.rotate30deg{
+	animation-name: rotate30deg;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotate30deg;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotate30deg{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(30deg);
+	}
+}
+
+@keyframes rotate30deg{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(30deg);
+	}
+}

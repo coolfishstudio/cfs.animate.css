@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>IT酷鱼网 ｜ CFS.ANIMATE.CSS</title>
+		<style type="text/css">
+			body {
+				-webkit-user-select: none;  /* Chrome all / Safari all */
+				-moz-user-select: none;     /* Firefox all */
+				-ms-user-select: none;      /* IE 10+ */
+
+				/* No support for these yet, use at own risk */
+				-o-user-select: none;
+				user-select: none;          
+			}
+			.wrap{width: 100%;text-align: center;}
+			.wrap h1{font-size: 48px;}
+			.wrap hr{border: none;margin-top: -1px;height: 1px;background-color: #c0c8c9;background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);width: 500px;}
+			.box{width: 1010px;min-width: 1000px;margin: 80px auto 20px auto;overflow: hidden;border: 1px #eee solid;}
+			.box .category{width: 1000px;float: left; height: 30px;background: #eee;padding-left: 30px;line-height: 30px;border-left: 10px #ddd solid;}
+			.box .list{width:200px;float: left; height: 180px;border: 1px #eee solid;}
+			.box .content{width: 100%;height: 140px;line-height: 100px;text-align: center;cursor: pointer;}
+			.box .title{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 12px;color:#aaa;}
+		</style>
+
+		<!-- 运动库 -->
+		<!-- 常见运动 -->
+		<link rel="stylesheet" type="text/css" href="src/common/rotate30deg.css">
+		<link rel="stylesheet" type="text/css" href="src/common/rotate45deg.css">
+		<link rel="stylesheet" type="text/css" href="src/common/rotate90deg.css">
+
+		<!-- 弹跳 -->
+		<link rel="stylesheet" type="text/css" href="src/bouncing_entrances/bounceIn.css">
+		
+
+
+
+		<script type="text/javascript" src="jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var timer = null;
+
+				var objJson = {
+					'常见运动' : ['rotate30deg', 'rotate45deg', 'rotate90deg'],
+					'弹跳' : ['bounceIn']
+				};
+
+				/* 点击查看样式 */
+				$('.list').on('click',function(){
+					var _this = $(this);
+					if(_this.find('.content span').hasClass(_this.find('.title span').html())){
+						_this.find('.content span').removeClass(_this.find('.title span').html());
+						clearTimeout(timer);
+						timer = setTimeout(function(){
+							_this.find('.content span').addClass(_this.find('.title span').html());
+						},10)
+					}else{
+						_this.find('.content span').addClass(_this.find('.title span').html());
+					}
+				});
+
+
+				
+				function randomRGB(){
+					return '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6);
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<span><h1>CFS.ANIMATE.CSS</h1></span>
+			<hr>
+			<span>css3运动库</span>
+		</div>
+		<div class="box">
+			<div class="category">
+				常见运动
+			</div>
+			<div class="list">
+				<div class="title">
+					<span>rotate30deg</span>
+				</div>
+				<div class="content">
+					<span>CFS.ANIMATE.CSS</span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="title">
+					<span>rotate45deg</span>
+				</div>
+				<div class="content">
+					<span>CFS.ANIMATE.CSS</span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="title">
+					<span>rotate90deg</span>
+				</div>
+				<div class="content">
+					<span>CFS.ANIMATE.CSS</span>
+				</div>
+			</div>
+			<div class="category">
+				弹跳
+			</div>
+			<div class="list">
+				<div class="title">
+					<span>bounceIn</span>
+				</div>
+				<div class="content">
+					<span>CFS.ANIMATE.CSS</span>
+				</div>
+			</div>
+		</div>
+</html>

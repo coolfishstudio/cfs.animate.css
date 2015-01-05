@@ -1,0 +1,24 @@
+.rotate45deg{
+	animation-name: rotate45deg;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotate45deg;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotate45deg{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(45deg);
+	}
+}
+
+@keyframes rotate45deg{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(45deg);
+	}
+}

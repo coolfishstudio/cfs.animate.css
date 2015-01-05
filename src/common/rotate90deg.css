@@ -1,0 +1,24 @@
+.rotate90deg{
+	animation-name: rotate90deg;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotate90deg;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotate90deg{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(90deg);
+	}
+}
+
+@keyframes rotate90deg{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(90deg);
+	}
+}
