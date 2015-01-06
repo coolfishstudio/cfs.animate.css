@@ -1,0 +1,28 @@
+.lightSpeedOutUp{
+	animation-name: lightSpeedOutUp;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-in;
+	-webkit-animation-name: lightSpeedOutUp;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes lightSpeedOutUp{
+	0%{
+		opacity: 1;	
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: translateY(-300px) skewY(10deg);
+	}
+}
+
+@keyframes lightSpeedOutUp{
+	0%{
+		opacity: 1;	
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(-300px) skewY(10deg);
+	}
+}

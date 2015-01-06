@@ -1,0 +1,30 @@
+.lightSpeedOut{
+	animation-name: lightSpeedOut;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in;
+	-webkit-animation-name: lightSpeedOut;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes lightSpeedOut{
+	10%{
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	}
+}
+
+@keyframes lightSpeedOut{
+	10%{
+		opacity: 1;	
+		transform: scale3d(1, 1, 1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+}
