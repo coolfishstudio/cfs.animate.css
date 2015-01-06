@@ -1,0 +1,42 @@
+.lightSpeedInDown{
+	animation-name: lightSpeedInDown;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-out;
+	-webkit-animation-name: lightSpeedInDown;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes lightSpeedInDown{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(-300px) skewY(-10deg);
+	}
+	60%{
+		opacity: 1;
+		-webkit-transform: skewY(-10deg);
+	}
+	80%{
+		-webkit-transform: skewY(5deg);
+	}
+	100%{
+		-webkit-transform: none;
+	}
+}
+
+@keyframes lightSpeedInDown{
+	0%{
+		opacity: 0;
+		transform: translateY(-300px) skewY(-10deg);
+	}
+	60%{
+		opacity: 1;
+		transform: skewY(-10deg);
+	}
+	80%{
+		transform: skewY(5deg);
+	}
+	100%{
+		transform: none;
+	}	
+}
