@@ -10,7 +10,7 @@
 		-webkit-transform: translateX(0);
 	}
 	100%{
-		-webkit-transform: translateX(100px);
+		-webkit-transform: translateX(-100px);
 	}
 }
 
@@ -19,6 +19,6 @@
 		transform: translateX(0);
 	}
 	100%{
-		transform: translateX(100px);
+		transform: translateX(-100px);
 	}
 }
