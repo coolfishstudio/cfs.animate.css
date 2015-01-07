@@ -1,0 +1,32 @@
+.rotateInUpRight{
+	animation-name: rotateInUpRight;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotateInUpRight;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotateInUpRight{
+	0%{
+		opacity: 0;
+		-webkit-transform-origin: right top;
+		-webkit-transform: rotate(-45deg);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform-origin: right top;
+		-webkit-transform: none;
+	}
+}
+
+@keyframes rotateInUpRight{
+	0%{
+		opacity: 0;
+		transform-origin: right top;
+		transform: rotate(-45deg);
+	}
+	100%{
+		opacity: 1;
+		transform-origin: right top;
+		transform: none;
+	}
+}

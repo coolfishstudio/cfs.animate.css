@@ -1,0 +1,32 @@
+.rotateOutDownLeft{
+	animation-name: rotateOutDownLeft;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotateOutDownLeft;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotateOutDownLeft{
+	0%{
+		opacity: 1;
+		-webkit-transform-origin: left top;
+		-webkit-transform: none;
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform-origin: left top;
+		-webkit-transform: rotate(45deg);
+	}
+}
+
+@keyframes rotateOutDownLeft{
+	0%{
+		opacity: 1;
+		transform-origin: left top;
+		transform: none;
+	}
+	100%{
+		opacity: 0;
+		transform-origin: left top;
+		transform: rotate(45deg);
+	}
+}

@@ -28,6 +28,7 @@
 			.box .category{width: 1000px;float: left; height: 30px;background: #eee;padding-left: 30px;line-height: 30px;border-left: 10px #ddd solid;}
 			.box .list{width:200px;float: left; height: 180px;border: 1px #eee solid;}
 			.box .content{width: 100%;height: 140px;line-height: 100px;text-align: center;cursor: pointer;}
+			.box .content span{display: block;}
 			.box .title{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 12px;color:#666;}
 		</style>
 
@@ -73,6 +74,21 @@
 		<link rel="stylesheet" type="text/css" href="src/lightspeed/lightSpeedOutDown.css">
 		<link rel="stylesheet" type="text/css" href="src/lightspeed/lightSpeedOutUp.css">
 
+		<!-- rotate -->
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateIn.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInUpLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInUpRight.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInDownLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInDownRight.css">
+
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOut.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutUpLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutUpRight.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutDownLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutDownRight.css">
+
+
+
 
 		<script type="text/javascript" src="jquery-1.7.2.js"></script>
 		<script type="text/javascript">
@@ -81,7 +97,8 @@
 				var objJson = {
 					'common' : ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg'],
 					'bouncing' : ['bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown'],
-					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown']
+					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'],
+					'rotate' : ['rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight']
 				};
 				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'];
 
@@ -124,7 +141,7 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<span class="btnBar"><h1 class="bounceIn">CFS.ANIMATE.CSS</h1><p class="bounceIn">bounceIn</p></span>
+			<span class="btnBar"><h1 class="rotateInUpLeft">CFS.ANIMATE.CSS</h1><p class="bounceIn">bounceIn</p></span>
 			<span class="btnBar"><h4 class="bounceIn">换一换</h4></span>
 			<span class="bounceIn">css3运动库 ｜ 编写中，后期可下载使用</span>
 			<hr>

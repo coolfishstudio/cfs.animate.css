@@ -1,0 +1,28 @@
+.rotateIn{
+	animation-name: rotateIn;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotateIn;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotateIn{
+	0%{
+		opacity: 0;
+		-webkit-transform: rotate(-200deg);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@keyframes rotateIn{
+	0%{
+		opacity: 0;
+		transform: rotate(-200deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}

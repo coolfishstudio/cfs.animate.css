@@ -1,0 +1,28 @@
+.rotateOut{
+	animation-name: rotateOut;
+	animation-duration: 0.75s;
+	-webkit-animation-name: rotateOut;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes rotateOut{
+	0%{
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: rotate(200deg);
+	}
+}
+
+@keyframes rotateOut{
+	0%{
+		opacity: 0;
+		transform: rotate(200deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}
