@@ -8,9 +8,12 @@
 }
 
 @-webkit-keyframes lightSpeedOut{
-	10%{
+	0%{
 		opacity: 1;
 		-webkit-transform: scale3d(1, 1, 1);
+	}
+	20%{
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
 	}
 	100%{
 		opacity: 0;
@@ -19,9 +22,12 @@
 }
 
 @keyframes lightSpeedOut{
-	10%{
+	0%{
 		opacity: 1;	
 		transform: scale3d(1, 1, 1);
+	}
+	20%{
+		transform: scale3d(1.1, 1.1, 1.1);
 	}
 	100%{
 		opacity: 0;
