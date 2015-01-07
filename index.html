@@ -16,7 +16,7 @@
 		</script>
 
 		<style type="text/css">
-			body {
+			body{
 				font: 100%/1.5 "Roboto", Verdana, sans-serif, '微软雅黑';
 				-webkit-user-select: none;  /* Chrome all / Safari all */
 				-moz-user-select: none;     /* Firefox all */
@@ -24,9 +24,16 @@
 				-o-user-select: none;
 				user-select: none;          
 			}
+			a{
+				color: #7b8993;
+				text-decoration: underline;
+				-webkit-animation: hue 60s infinite linear;
+			}
 			.wrap{width: 100%;text-align: center;}
-			.wrap h1{font-size: 48px;}
-			.wrap hr{border: none;margin-top: -1px;height: 1px;background-color: #c0c8c9;background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);width: 500px;}
+			.wrap .btnBar{width: 100%;text-align: center;display: block;position: relative;}
+			.wrap h1{font-size: 63px;margin: 180px 0 60px 0;}
+			.wrap h4{font-size: 24px;padding: 10px 20px;border: 2px #7b8993 solid;display: inline-block;border-radius: 5px;cursor: pointer;color: #7b8993;margin: 10px 0 20px 0;}
+			.wrap hr{border: none;margin-top: 10px;height: 1px;background-color: #c0c8c9;background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);width: 500px;}
 			.box{width: 1010px;min-width: 1000px;margin: 80px auto 20px auto;overflow: hidden;border: 1px #eee solid;}
 			.box .category{width: 1000px;float: left; height: 30px;background: #eee;padding-left: 30px;line-height: 30px;border-left: 10px #ddd solid;}
 			.box .list{width:200px;float: left; height: 180px;border: 1px #eee solid;}
@@ -81,12 +88,12 @@
 		<script type="text/javascript">
 			$(function(){
 				var timer = null;
-
 				var objJson = {
 					'common' : ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg'],
 					'bouncing' : ['bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown'],
 					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown']
 				};
+				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'];
 
 				/* 点击查看样式 */
 				$('.box').delegate('.list', 'click', function(){
@@ -101,7 +108,12 @@
 						_this.find('.content span').addClass(_this.find('.title span').html());
 					}
 				});
-
+				/* 随机切换样式 */
+				$('.wrap h4').click(function(){
+					var _randomCss = randomCss();
+					$('.wrap h1').attr('class', '');
+					$('.wrap h1').attr('class', _randomCss);
+				});
 				/* 生成列表 */
 				for(var name in objJson){
 					$('#box').append('<div class="category">' + name + '</div>');
@@ -113,14 +125,23 @@
 				function randomRGB(){
 					return '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6);
 				}
+				function randomCss(){
+					return objArr[Math.round(Math.random()*objArr.length)];
+				}
 			});
 		</script>
 	</head>
 	<body>
 		<div class="wrap">
 			<span><h1 class="bounceInDown">CFS.ANIMATE.CSS</h1></span>
-			<hr>
+			<span class="btnBar"><h4 class="bounceIn">换一换</h4></span>
 			<span class="bounceIn">css3运动库 ｜ 编写中，后期可下载使用</span>
+			<hr>
+			<span class="bounceIn">
+				<a href="###" onclick="alert('暂不提供下载，尽请期待。')">Download CFS.Animate.css</a>
+				&nbsp;or&nbsp; 
+				<a href="https://github.com/coolfishstudio/cfs.animate.css">View on GitHub</a>
+			</span>
 		</div>
 		<div class="box" id="box">	
 		</div>
