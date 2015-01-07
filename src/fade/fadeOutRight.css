@@ -1,0 +1,28 @@
+.fadeOutRight{
+	animation-name: fadeOutRight;
+	animation-duration: 0.75s;
+	-webkit-animation-name: fadeOutRight;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes fadeOutRight{
+	10%{
+		opacity: 1;
+		-webkit-transform: none;
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: translateX(100%);
+	}
+}
+
+@keyframes fadeOutRight{
+	10%{
+		opacity: 1;
+		transform: none;
+	}
+	100%{
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}

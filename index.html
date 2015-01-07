@@ -80,13 +80,23 @@
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInUpRight.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInDownLeft.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateInDownRight.css">
-
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOut.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutUpLeft.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutUpRight.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutDownLeft.css">
 		<link rel="stylesheet" type="text/css" href="src/rotate/rotateOutDownRight.css">
 
+		<!-- fade -->
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeIn.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeInLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeInRight.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeInUp.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeInDown.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeOut.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeOutLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeOutRight.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeOutUp.css">
+		<link rel="stylesheet" type="text/css" href="src/fade/fadeOutDown.css">
 
 
 
@@ -96,11 +106,12 @@
 				var timer = null;
 				var objJson = {
 					'common' : ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg'],
-					'bouncing' : ['bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown'],
+					'bounce' : ['bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown'],
 					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'],
-					'rotate' : ['rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight']
+					'rotate' : ['rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight'],
+					'fade' : ['fadeIn', 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'fadeInDown', 'fadeOut', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUp', 'fadeOutDown']
 				};
-				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown', 'rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight'];
+				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown', 'rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight', 'fadeIn', 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'fadeInDown', 'fadeOut', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUp', 'fadeOutDown'];
 
 				/* 点击查看样式 */
 				$('.box').delegate('.list', 'click', function(){

@@ -1,0 +1,28 @@
+.fadeOutUp{
+	animation-name: fadeOutUp;
+	animation-duration: 0.75s;
+	-webkit-animation-name: fadeOutUp;
+	-webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes fadeOutUp{
+	10%{
+		opacity: 1;
+		-webkit-transform: none;
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: translateY(-100%);
+	}
+}
+
+@keyframes fadeOutUp{
+	10%{
+		opacity: 1;
+		transform: none;
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
