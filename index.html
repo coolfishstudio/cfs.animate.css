@@ -31,7 +31,8 @@
 			}
 			.wrap{width: 100%;text-align: center;}
 			.wrap .btnBar{width: 100%;text-align: center;display: block;position: relative;}
-			.wrap h1{font-size: 63px;margin: 180px 0 60px 0;}
+			.wrap .btnBar p{position: absolute;bottom:100px;left: 70%;background: #7b8993;color:#fff;margin: -20px 0 0 0;padding: 5px 10px;border-radius: 5px;}
+			.wrap h1{font-size: 63px;margin: 180px 0 60px 0;position: relative;z-index: 2;}
 			.wrap h4{font-size: 24px;padding: 10px 20px;border: 2px #7b8993 solid;display: inline-block;border-radius: 5px;cursor: pointer;color: #7b8993;margin: 10px 0 20px 0;}
 			.wrap hr{border: none;margin-top: 10px;height: 1px;background-color: #c0c8c9;background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);width: 500px;}
 			.box{width: 1010px;min-width: 1000px;margin: 80px auto 20px auto;overflow: hidden;border: 1px #eee solid;}
@@ -113,6 +114,7 @@
 					var _randomCss = randomCss();
 					$('.wrap h1').attr('class', '');
 					$('.wrap h1').attr('class', _randomCss);
+					$('.wrap .btnBar p').html(_randomCss);
 				});
 				/* 生成列表 */
 				for(var name in objJson){
@@ -133,7 +135,7 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<span><h1 class="bounceInDown">CFS.ANIMATE.CSS</h1></span>
+			<span class="btnBar"><h1 class="bounceIn">CFS.ANIMATE.CSS</h1><p class="bounceIn">bounceIn</p></span>
 			<span class="btnBar"><h4 class="bounceIn">换一换</h4></span>
 			<span class="bounceIn">css3运动库 ｜ 编写中，后期可下载使用</span>
 			<hr>
