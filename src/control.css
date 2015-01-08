@@ -1,0 +1,118 @@
+/*运动结束就停止*/
+.animationEnd{
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+/*永久运动*/
+.animationInfinite{   
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+/*运动停止*/
+.animationStop{   
+	animation-iteration-count: 0;
+    -webkit-animation-iteration-count: 0;
+}
+/*运动暂停*/
+.animationPaused{   
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+/*运动进行*/
+.animationStart{   
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+/*运动暂停 移出进行*/
+.animationPausedHover{   
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+.animationPausedHover:hover{   
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+/*运动进行 移出暂停*/
+.animationStartHover{   
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+.animationStartHover:hover{   
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+/*运动次数*/
+.animationCount2{   
+	animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+}
+.animationCount3{   
+	animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+}
+.animationCount4{   
+	animation-iteration-count: 4;
+    -webkit-animation-iteration-count: 4;
+}
+.animationCount5{   
+	animation-iteration-count: 5;
+    -webkit-animation-iteration-count: 5;
+}
+.animationCount7{   
+	animation-iteration-count: 7;
+    -webkit-animation-iteration-count: 7;
+}
+.animationCount10{   
+	animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 10;
+}
+/*时间周期*/
+.animationTime10{
+	animation-duration: 0.1s;
+    -webkit-animation-duration: 0.1s;
+}
+.animationTime20{
+	animation-duration: 0.2s;
+    -webkit-animation-duration: 0.2s;
+}
+.animationTime50{
+	animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+.animationTime100{
+	animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+.animationTime120{
+	animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+}
+.animationTime150{
+	animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+}
+.animationTime200{
+	animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+/*延迟时间*/
+.animationDelay5{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.animationDelay10{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.animationDelay20{
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+}
+.animationDelay25{
+	animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.animationDelay50{
+	animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}

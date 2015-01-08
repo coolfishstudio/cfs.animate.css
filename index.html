@@ -33,6 +33,7 @@
 		</style>
 
 		<!-- 运动库 -->
+		
 		<!-- common -->
 		<link rel="stylesheet" type="text/css" href="src/common/rotate30deg.css">
 		<link rel="stylesheet" type="text/css" href="src/common/rotate45deg.css">
@@ -111,11 +112,15 @@
 		<link rel="stylesheet" type="text/css" href="src/flip/flipOutX.css">
 		
 
+		<link rel="stylesheet" type="text/css" href="src/control.css">
+
+
 		<script type="text/javascript" src="jquery-1.7.2.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				var timer = null;
 				var objJson = {
+					'control(在效果的后面增加控制，会出现多种效果) ' : ['flipFlyY animationEnd', 'flipFlyY animationInfinite', 'flipFlyY animationStop', 'flipFlyY animationPaused', 'flipFlyY animationStart', 'flipFlyY animationPausedHover', 'flipFlyY animationStartHover', 'flipFlyY animationCount2', 'flipFlyY animationCount3', 'flipFlyY animationCount4', 'flipFlyY animationCount5', 'flipFlyY animationCount7', 'flipFlyY animationCount10', 'flipFlyY animationTime10', 'flipFlyY animationTime20', 'flipFlyY animationTime50', 'flipFlyY animationTime100', 'flipFlyY animationTime120', 'flipFlyY animationTime150', 'flipFlyY animationTime200', 'flipFlyY animationDelay5', 'flipFlyY animationDelay10', 'flipFlyY animationDelay20', 'flipFlyY animationDelay25', 'flipFlyY animationDelay50'],
 					'common' : ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg'],
 					'bounce' : ['bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown'],
 					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'],
