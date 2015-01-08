@@ -1,0 +1,46 @@
+.beat {
+    animation-name: beat;
+    animation-duration: 0.75s;
+    transform-origin: center bottom;
+    -webkit-animation-name: beat;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: center bottom;
+}
+
+@-webkit-keyframes beat{
+    0%, 20%, 53%, 80%, 100% {
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-transition-timing-function: ease-in;
+    }
+    40%{
+        -webkit-transform : translate3d(0, -30px, 0);
+        -webkit-transition-timing-function: ease-out;
+    }
+    70%{
+        -webkit-transform : translate3d(0, -15px, 0);
+        -webkit-transition-timing-function: ease-out;
+    }
+    90%{
+        -webkit-transform : translate3d(0, -4px, 0);
+        -webkit-transition-timing-function: ease-out;
+    }
+}
+
+@keyframes beat{
+    0%, 20%, 53%, 80%, 100% {
+        transform: translate3d(0,0,0);
+        transition-timing-function: ease-in;
+    }
+    40%{
+        transform : translate3d(0, -30px, 0);
+        transition-timing-function: ease-out;
+    }
+    70%{
+        transform : translate3d(0, -15px, 0);
+        transition-timing-function: ease-out;
+    }
+    90%{
+        transform : translate3d(0, -4px, 0);
+        transition-timing-function: ease-out;
+    }
+}

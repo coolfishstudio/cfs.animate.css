@@ -1,0 +1,24 @@
+.bounce {
+    animation-name: bounce;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes bounce{
+    0%, 50%, 100% {
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+    25%, 75%{
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+@keyframes bounce{
+    0%, 50%, 100% {
+        transform: scale3d(1, 1, 1);
+    }
+    25%, 75%{
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}

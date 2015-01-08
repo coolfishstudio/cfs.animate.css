@@ -10,17 +10,17 @@
 		opacity: 0;
 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
 	}
-	20%{
+	40%{
 		-webkit-transform: scale3d(1.1, 1.1, 1.1);
 	}
-	40%{
+	50%{
 		-webkit-transform: scale3d(0.9, 0.9, 0.9);
 	}
-	60%{
+	70%{
 		opacity: 1;
 		-webkit-transform: scale3d(1.03, 1.03, 1.03);
 	}
-	80%{
+	90%{
 		-webkit-transform: scale3d(0.97, 0.97, 0.97);
 	}
 	100%{
@@ -33,17 +33,17 @@
 		opacity: 0;
 		transform: scale3d(0.3, 0.3, 0.3);
 	}
-	20%{
+	40%{
 		transform: scale3d(1.1, 1.1, 1.1);
 	}
-	40%{
+	50%{
 		transform: scale3d(0.9, 0.9, 0.9);
 	}
-	60%{
+	70%{
 		opacity: 1;
 		transform: scale3d(1.03, 1.03, 1.03);
 	}
-	80%{
+	90%{
 		transform: scale3d(0.97, 0.97, 0.97);
 	}
 	100%{
