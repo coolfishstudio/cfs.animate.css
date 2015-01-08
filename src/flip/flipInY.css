@@ -1,0 +1,30 @@
+.flipInY {
+    animation-name: flipInY;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipInY;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flipInY{
+    0%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -180deg);
+        -webkit-transition-timing-function: ease-in;
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+}
+
+@keyframes flipInY{
+    0%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(0, 1, 0, -180deg);
+        transition-timing-function: ease-in;
+    }
+    100%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+}
