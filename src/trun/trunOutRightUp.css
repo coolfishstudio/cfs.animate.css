@@ -1,0 +1,32 @@
+.trunOutRightUp {
+    animation-name: trunOutRightUp;
+    animation-duration: 0.75s;
+    transform-origin: right top;
+    -webkit-animation-name: trunOutRightUp;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: right top;
+}
+
+@-webkit-keyframes trunOutRightUp{
+    0%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-out;
+    }
+}
+
+@keyframes trunOutRightUp{
+    0%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+    100%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
+        transition-timing-function: ease-out;
+    }
+}

@@ -16,7 +16,7 @@
 		</script>
 
 		<style type="text/css">
-			body{font: 100%/1.5 "Roboto", Verdana, sans-serif, '微软雅黑';-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+			body{font: 100%/1.5 "Roboto", Verdana, sans-serif, '微软雅黑';-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;overflow-x: hidden;}
 			a{color: #7b8993;text-decoration: underline;}
 			.wrap{width: 100%;text-align: center;margin-bottom: 200px;}
 			.wrap .btnBar{width: 100%;text-align: center;display: block;position: relative;}
@@ -111,6 +111,28 @@
 		<link rel="stylesheet" type="text/css" href="src/flip/flipInX.css">
 		<link rel="stylesheet" type="text/css" href="src/flip/flipOutX.css">
 		
+		<!-- trun -->
+		<link rel="stylesheet" type="text/css" href="src/trun/trunLeft.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInLeftUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInLeftDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInRightUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInRightDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunRight.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutLeftUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutLeftDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutRightUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutRightDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunTop.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInTopUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInTopDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInBottomUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunInBottomDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunBottom.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutTopUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutTopDown.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutBottomUp.css">
+		<link rel="stylesheet" type="text/css" href="src/trun/trunOutBottomDown.css">
+		
 
 		<link rel="stylesheet" type="text/css" href="src/control.css">
 
@@ -126,9 +148,10 @@
 					'lightspeed' : ['lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown'],
 					'rotate' : ['rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight'],
 					'fade' : ['fadeIn', 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'fadeInDown', 'fadeOut', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUp', 'fadeOutDown'],
-					'flip' : ['flipY', 'flipFlyY', 'flipFadeY', 'flipInY', 'flipOutY', 'flipX', 'flipFlyX', 'flipFadeX', 'flipInX', 'flipOutX']
+					'flip' : ['flipY', 'flipFlyY', 'flipFadeY', 'flipInY', 'flipOutY', 'flipX', 'flipFlyX', 'flipFadeX', 'flipInX', 'flipOutX'],
+					'trun' : ['trunInLeftUp', 'trunInLeftDown', 'trunLeft', 'trunInRightUp', 'trunInRightDown', 'trunOutLeftUp', 'trunOutLeftDown', 'trunRight', 'trunOutRightUp', 'trunOutRightDown', 'trunInTopUp', 'trunInTopDown', 'trunTop', 'trunInBottomUp', 'trunInBottomDown', 'trunOutTopUp', 'trunOutTopDown', 'trunBottom', 'trunOutBottomUp', 'trunOutBottomDown']
 				};
-				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown', 'rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight', 'fadeIn', 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'fadeInDown', 'fadeOut', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUp', 'fadeOutDown', 'flipY', 'flipFlyY', 'flipFadeY', 'flipInY', 'flipOutY', 'flipX', 'flipFlyX', 'flipFadeX', 'flipInX', 'flipOutX'];
+				var objArr = ['rotate30deg', 'rotate45deg', 'rotate90deg', 'scaleX2', 'scaleY2', 'scale2', 'translateUp', 'translateRight', 'translateLeft', 'translateDown', 'skew30deg', 'skewX30deg', 'skewY30deg', 'rotateX60deg', 'rotateY60deg','bounceIn', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'bounceInDown', 'bounceOut', 'bounceOutLeft', 'bounceOutRight', 'bounceOutUp', 'bounceOutDown','lightSpeedIn', 'lightSpeedInLeft', 'lightSpeedInRight', 'lightSpeedInUp', 'lightSpeedInDown', 'lightSpeedOut', 'lightSpeedOutLeft', 'lightSpeedOutRight', 'lightSpeedOutUp', 'lightSpeedOutDown', 'rotateIn', 'rotateInUpLeft', 'rotateInUpRight', 'rotateInDownLeft', 'rotateInDownRight', 'rotateOut', 'rotateOutUpLeft', 'rotateOutUpRight', 'rotateOutDownLeft', 'rotateOutDownRight', 'fadeIn', 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'fadeInDown', 'fadeOut', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUp', 'fadeOutDown', 'flipY', 'flipFlyY', 'flipFadeY', 'flipInY', 'flipOutY', 'flipX', 'flipFlyX', 'flipFadeX', 'flipInX', 'flipOutX', 'trunInLeftUp', 'trunInLeftDown', 'trunLeft', 'trunInRightUp', 'trunInRightDown', 'trunOutLeftUp', 'trunOutLeftDown', 'trunRight', 'trunOutRightUp', 'trunOutRightDown', 'trunInTopUp', 'trunInTopDown', 'trunTop', 'trunInBottomUp', 'trunInBottomDown', 'trunOutTopUp', 'trunOutTopDown', 'trunBottom', 'trunOutBottomUp', 'trunOutBottomDown'];
 
 				/* 点击查看样式 */
 				$('.box').delegate('.list', 'click', function(){

@@ -1,0 +1,32 @@
+.trunOutBottomUp {
+    animation-name: trunOutBottomUp;
+    animation-duration: 0.75s;
+    transform-origin: right bottom;
+    -webkit-animation-name: trunOutBottomUp;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: right bottom;
+}
+
+@-webkit-keyframes trunOutBottomUp{
+    0%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
+        -webkit-transition-timing-function: ease-out;
+    }
+}
+
+@keyframes trunOutBottomUp{
+    0%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+    100%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
+        transition-timing-function: ease-out;
+    }
+}

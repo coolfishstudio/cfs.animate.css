@@ -1,0 +1,51 @@
+.trunLeft {
+    animation-name: trunLeft;
+    animation-duration: 0.75s;
+    transform-origin: left top;
+    -webkit-animation-name: trunLeft;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: left top;
+}
+
+@-webkit-keyframes trunLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 360deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    40%{
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 190deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    50%{
+        opacity: 1;
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 170deg);
+        -webkit-animation-timing-function: ease-in;
+    }
+    100%{
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes trunLeft{
+    0%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(0, 1, 0, 360deg);
+        animation-timing-function: ease-out;
+        
+    }
+    40%{
+        transform: perspective(400px) rotate3d(0, 1, 0, 190deg);
+        animation-timing-function: ease-out;
+    }
+    50%{
+        opacity: 1;
+        transform: perspective(400px) rotate3d(0, 1, 0, 170deg);
+        animation-timing-function: ease-in;
+    }
+    100%{
+        transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+}

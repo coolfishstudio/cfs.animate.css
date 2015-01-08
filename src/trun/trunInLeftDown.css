@@ -1,0 +1,32 @@
+.trunInLeftDown {
+    animation-name: trunInLeftDown;
+    animation-duration: 0.75s;
+    transform-origin: left top;
+    -webkit-animation-name: trunInLeftDown;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: left top;
+}
+
+@-webkit-keyframes trunInLeftDown{
+    0%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
+        -webkit-transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+}
+
+@keyframes trunInLeftDown{
+    0%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
+        transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
+    }
+}
