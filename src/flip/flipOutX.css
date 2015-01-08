@@ -1,0 +1,30 @@
+.flipOutX {
+    animation-name: flipOutX;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipOutX;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flipOutX{
+    0%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+        -webkit-transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 180deg);
+    }
+}
+
+@keyframes flipOutX{
+    0%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+        transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(1, 0, 0, 180deg);
+    }
+}

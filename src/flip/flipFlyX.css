@@ -1,0 +1,44 @@
+.flipFlyX {
+    animation-name: flipFlyX;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipFlyX;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flipFlyX{
+    0%{
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    40%{
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(1, 0, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    50%{
+        -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(1, 0, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+    }
+    100%{
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes flipFlyX{
+    0%{
+        transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
+        animation-timing-function: ease-out;
+    }
+    40%{
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(1, 0, 0, -190deg);
+        animation-timing-function: ease-out;
+    }
+    50%{
+        transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(1, 0, 0, -170deg);
+        animation-timing-function: ease-in;
+    }
+    100%{
+        transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+}

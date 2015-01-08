@@ -1,0 +1,30 @@
+.flipInX {
+    animation-name: flipInX;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipInX;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flipInX{
+    0%{
+        opacity: 0;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -180deg);
+        -webkit-transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+}
+
+@keyframes flipInX{
+    0%{
+        opacity: 0;
+        transform : perspective(800px) rotate3d(1, 0, 0, -180deg);
+        transition-timing-function: ease-out;
+    }
+    100%{
+        opacity: 1;
+        transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+}

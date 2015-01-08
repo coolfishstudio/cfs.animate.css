@@ -1,0 +1,24 @@
+.flipFadeX {
+    animation-name: flipFadeX;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipFadeX;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flipFadeX{
+    0%{
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+    100%{
+        -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 180deg);
+    }
+}
+
+@keyframes flipFadeX{
+    0%{
+        transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
+    }
+    100%{
+        transform : perspective(800px) rotate3d(1, 0, 0, 180deg);
+    }
+}
