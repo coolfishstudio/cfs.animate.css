@@ -1,0 +1,30 @@
+.nod {
+    animation-name: nod;
+    animation-duration: 0.75s;
+    -webkit-animation-name: nod;
+    -webkit-animation-duration: 0.75s;
+}
+
+@-webkit-keyframes nod{
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90%{
+        -webkit-transform: translate3d(0, 10px, 0);
+    }
+    20%, 40%, 60%, 80%{
+        -webkit-transform: translate3d(0, -10px, 0);
+    }
+}
+
+@keyframes nod{
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90%{
+        transform: translate3d(0, 10px, 0);
+    }
+    20%, 40%, 60%, 80%{
+        transform: translate3d(0, -10px, 0);
+    }
+}

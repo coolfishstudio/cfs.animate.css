@@ -1,0 +1,44 @@
+.swing {
+    animation-name: swing;
+    animation-duration: 0.75s;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 0.75s;
+    -webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes swing{
+    20%{
+        -webkit-transform : rotate3d(0, 0, 1, 15deg);
+    }
+    40%{
+        -webkit-transform : rotate3d(0, 0, 1, -15deg);
+    }
+    60%{
+        -webkit-transform : rotate3d(0, 0, 1, 5deg);
+    }
+    80%{
+        -webkit-transform : rotate3d(0, 0, 1, -5deg);
+    }
+    100%{
+        -webkit-transform : rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+@keyframes swing{
+    20%{
+        transform : rotate3d(0, 0, 1, 15deg);
+    }
+    40%{
+        transform : rotate3d(0, 0, 1, -15deg);
+    }
+    60%{
+        transform : rotate3d(0, 0, 1, 5deg);
+    }
+    80%{
+        transform : rotate3d(0, 0, 1, -5deg);
+    }
+    100%{
+        transform : rotate3d(0, 0, 1, 0deg);
+    }
+}
