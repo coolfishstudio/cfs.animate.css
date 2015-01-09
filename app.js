@@ -13,6 +13,8 @@ var server = http.createServer(function(req, res){
 		serve(__dirname + '/index.html', 'text/html');
 	}else if('GET' == req.method && '/jquery-1.7.2.js' == req.url){//加载jquery
 		serve(__dirname + req.url, 'text/javascript');
+	}else if('GET' == req.method && ('/CFS.Animate.css' == req.url || '/CFS.Animate.min.css' == req.url)){//加载css
+		serve(__dirname + req.url, 'text/css');
 	}else if('GET' == req.method && '/src/' == req.url.substr(0,5)){//加载源文件
 		if('.js' == getType(req.url)){
 			serve(__dirname + req.url, 'text/javascript');
