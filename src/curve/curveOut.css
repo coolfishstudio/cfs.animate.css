@@ -1,0 +1,36 @@
+.curveOut {
+    animation-name: curveOut;
+    animation-duration: 0.75s;
+    -webkit-animation-name: curveOut;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes curveOut{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    60%{
+        opacity: 1;
+        -webkit-transform: scale3d(1.475, 1.475, 1.475) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes curveOut{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    60%{
+        opacity: 1;
+        transform: scale3d(1.475, 1.475, 1.475) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+}
