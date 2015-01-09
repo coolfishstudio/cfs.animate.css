@@ -15,5 +15,8 @@
     "email": "461836324@qq.com"
   },
   "dependencies": {
+    "content-disposition": "^0.5.0",
+    "destroy": "^1.0.3",
+    "on-finished": "^2.2.0"
   }
 }
