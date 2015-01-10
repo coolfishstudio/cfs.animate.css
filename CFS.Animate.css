@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
  * CFS.Animate.css - animate.coolfishstudio.com
- * Copyright (c) 2015 yuchunyu QQ:461836324
+ * Copyright (c) 20150110 v0.0.2 yuchunyu QQ:461836324
  */
 
 .rotate30deg{
@@ -3661,6 +3661,376 @@
     100%{
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
         animation-timing-function: ease-in;
+    }
+}
+
+.foldIn {
+    animation-name: foldIn;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldIn;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldIn{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldIn{
+    0%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
+    }
+    100%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.foldInDown {
+    animation-name: foldInDown;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldInDown;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldInDown{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldInDown{
+    0%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.foldInLeft {
+    animation-name: foldInLeft;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldInLeft;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldInLeft{
+    0%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.foldInRight {
+    animation-name: foldInRight;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldInRight;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldInRight{
+    0%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.foldInUp {
+    animation-name: foldInUp;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldInUp;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldInUp{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldInUp{
+    0%{
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.foldOut {
+    animation-name: foldOut;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldOut;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldOut{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes foldOut{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
+}
+
+.foldOutDown {
+    animation-name: foldOutDown;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldOutDown;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldOutDown{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    }   
+}
+
+@keyframes foldOutDown{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    }
+}
+
+.foldOutLeft {
+    animation-name: foldOutLeft;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldOutLeft;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldOutLeft{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    }   
+}
+
+@keyframes foldOutLeft{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    }
+}
+
+.foldOutRight {
+    animation-name: foldOutRight;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldOutRight;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldOutRight{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    }   
+}
+
+@keyframes foldOutRight{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    }
+}
+
+.foldOutUp {
+    animation-name: foldOutUp;
+    animation-duration: 0.75s;
+    -webkit-animation-name: foldOutUp;
+    -webkit-animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes foldOutUp{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    }   
+}
+
+@keyframes foldOutUp{
+    0%{
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    45%,60%{
+        opacity: 1;
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
     }
 }
 
