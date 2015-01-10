@@ -17,7 +17,7 @@
     }
     100%{
         opacity: 0;
-        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
     }   
 }
 
@@ -31,6 +31,6 @@
     }
     100%{
         opacity: 0;
-        transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
     }
 }

@@ -10,7 +10,7 @@
 @-webkit-keyframes foldInUp{
     0%{
         opacity: 0;
-        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
     }
     45%,60%{
         opacity: 1;

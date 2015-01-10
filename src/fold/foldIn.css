@@ -1,34 +1,34 @@
-.foldInLeft {
-    animation-name: foldInLeft;
+.foldIn {
+    animation-name: foldIn;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldInLeft;
+    -webkit-animation-name: foldIn;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes foldInLeft{
+@-webkit-keyframes foldIn{
     0%{
         opacity: 0;
-        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
     }
     45%,60%{
         opacity: 1;
-        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+        -webkit-transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
     }
     100%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
 }
 
-@keyframes foldInLeft{
+@keyframes foldIn{
     0%{
         opacity: 0;
-        transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
     }
     45%,60%{
         opacity: 1;
-        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+        transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
     }
     100%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);

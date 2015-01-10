@@ -1,36 +1,36 @@
-.foldOutUp {
-    animation-name: foldOutUp;
+.foldOut {
+    animation-name: foldOut;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOutUp;
+    -webkit-animation-name: foldOut;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes foldOutUp{
+@-webkit-keyframes foldOut{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
     45%,60%{
         opacity: 1;
-        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+        -webkit-transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
     }
     100%{
         opacity: 0;
-        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    }   
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
+    }
 }
 
-@keyframes foldOutUp{
+@keyframes foldOut{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
     45%,60%{
         opacity: 1;
-        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
+        transform: perspective(400px) scale3d(1.075, 1.075, 1.075) translate3d(0, 0, 20px);
     }
     100%{
         opacity: 0;
-        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
     }
 }
