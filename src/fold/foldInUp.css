@@ -14,7 +14,7 @@
     }
     45%,60%{
         opacity: 1;
-        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 0, 0);
+        -webkit-transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
     }
     100%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
@@ -28,7 +28,7 @@
     }
     45%,60%{
         opacity: 1;
-        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 0, 0);
+        transform: scale3d(0.675, 0.675, 0.675) translate3d(0, 0, 0);
     }
     100%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
