@@ -1,0 +1,15 @@
+{
+	"name": "cfs.animate.css",
+	"version": "1.0.0",
+	"main": [
+		"./CFS.Animate.min.css"
+	],
+	"dependencies": {},
+	"readmeFilename": "README.md",
+	"_id": "cfs.animate.css@1.0.0",
+	"description": "Import CSS file can realize the motion effect",
+	"repository": {
+		"type": "git", 
+		"url": "git://github.com/coolfishstudio/cfs.animate.css.git"
+	}
+}
