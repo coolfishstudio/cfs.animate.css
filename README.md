@@ -20,3 +20,6 @@ css3的运动样式库
 那么 他就会有一个动画效果了
 
 参考样例 ： http://animate.coolfishstudio.com/
+
+注意：我们已经支持bower包规范，可以直接使用bower安装
+```bower install cfs.animate.css```
