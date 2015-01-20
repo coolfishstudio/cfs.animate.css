@@ -15,7 +15,7 @@ css3的运动样式库
 
 例如
 
-```<h1 class="bounceIn">CFS.ANIMATE.CSS</h1>```
+```<h1 class="cfs_bounceIn">CFS.ANIMATE.CSS</h1>```
 
 那么 他就会有一个动画效果了
 
