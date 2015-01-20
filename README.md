@@ -35,4 +35,4 @@ css3的运动样式库
 
 2.对所有样式增加了，默认运动结束后停止的效果，减轻了用户的使用麻烦度。
 
-以上修改建议 由 [鹿赟](https://github.com/kenticny) 提供
+以上修改建议 由 [kenticny](https://github.com/kenticny) 提供
