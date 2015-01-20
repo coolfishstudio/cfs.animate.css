@@ -1,17 +1,19 @@
 @charset "UTF-8";
 /*
  * CFS.Animate.css - animate.coolfishstudio.com
- * Copyright (c) 20150110 v0.0.2 yuchunyu QQ:461836324
+ * Copyright (c) 20150120 v0.0.3 yuchunyu QQ:461836324
  */
 
-.rotate30deg{
-	animation-name: rotate30deg;
+.cfs_rotate30deg{
+	animation-name: cfs_rotate30deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotate30deg;
+	-webkit-animation-name: cfs_rotate30deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotate30deg{
+@-webkit-keyframes cfs_rotate30deg{
 	0%{
 		-webkit-transform: rotate(0deg);
 	}
@@ -20,7 +22,7 @@
 	}
 }
 
-@keyframes rotate30deg{
+@keyframes cfs_rotate30deg{
 	0%{
 		transform: rotate(0deg);
 	}
@@ -29,14 +31,16 @@
 	}
 }
 
-.rotate45deg{
-	animation-name: rotate45deg;
+.cfs_rotate45deg{
+	animation-name: cfs_rotate45deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotate45deg;
+	-webkit-animation-name: cfs_rotate45deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotate45deg{
+@-webkit-keyframes cfs_rotate45deg{
 	0%{
 		-webkit-transform: rotate(0deg);
 	}
@@ -45,7 +49,7 @@
 	}
 }
 
-@keyframes rotate45deg{
+@keyframes cfs_rotate45deg{
 	0%{
 		transform: rotate(0deg);
 	}
@@ -54,14 +58,16 @@
 	}
 }
 
-.rotate90deg{
-	animation-name: rotate90deg;
+.cfs_rotate90deg{
+	animation-name: cfs_rotate90deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotate90deg;
+	-webkit-animation-name: cfs_rotate90deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotate90deg{
+@-webkit-keyframes cfs_rotate90deg{
 	0%{
 		-webkit-transform: rotate(0deg);
 	}
@@ -70,7 +76,7 @@
 	}
 }
 
-@keyframes rotate90deg{
+@keyframes cfs_rotate90deg{
 	0%{
 		transform: rotate(0deg);
 	}
@@ -79,14 +85,16 @@
 	}
 }
 
-.rotateX60deg{
-	animation-name: rotateX60deg;
+.cfs_rotateX60deg{
+	animation-name: cfs_rotateX60deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateX60deg;
+	-webkit-animation-name: cfs_rotateX60deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateX60deg{
+@-webkit-keyframes cfs_rotateX60deg{
 	0%{
 		-webkit-transform: perspective(800px) rotateX(0deg);
 	}
@@ -95,7 +103,7 @@
 	}
 }
 
-@keyframes rotateX60deg{
+@keyframes cfs_rotateX60deg{
 	0%{
 		transform: perspective(800px) rotateX(0deg);
 	}
@@ -104,14 +112,16 @@
 	}
 }
 
-.rotateY60deg{
-	animation-name: rotateY60deg;
+.cfs_rotateY60deg{
+	animation-name: cfs_rotateY60deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateY60deg;
+	-webkit-animation-name: cfs_rotateY60deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateY60deg{
+@-webkit-keyframes cfs_rotateY60deg{
 	0%{
 		-webkit-transform: perspective(800px) rotateY(0deg);
 	}
@@ -120,7 +130,7 @@
 	}
 }
 
-@keyframes rotateY60deg{
+@keyframes cfs_rotateY60deg{
 	0%{
 		transform: perspective(800px) rotateY(0deg);
 	}
@@ -129,14 +139,16 @@
 	}
 }
 
-.scale2{
-	animation-name: scale2;
+.cfs_scale2{
+	animation-name: cfs_scale2;
 	animation-duration: 0.75s;
-	-webkit-animation-name: scale2;
+	-webkit-animation-name: cfs_scale2;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes scale2{
+@-webkit-keyframes cfs_scale2{
 	0%{
 		-webkit-transform: scale(1);
 	}
@@ -145,7 +157,7 @@
 	}
 }
 
-@keyframes scale2{
+@keyframes cfs_scale2{
 	0%{
 		transform: scale(1);
 	}
@@ -154,14 +166,16 @@
 	}
 }
 
-.scaleX2{
-	animation-name: scaleX2;
+.cfs_scaleX2{
+	animation-name: cfs_scaleX2;
 	animation-duration: 0.75s;
-	-webkit-animation-name: scaleX2;
+	-webkit-animation-name: cfs_scaleX2;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes scaleX2{
+@-webkit-keyframes cfs_scaleX2{
 	0%{
 		-webkit-transform: scaleX(1);
 	}
@@ -170,7 +184,7 @@
 	}
 }
 
-@keyframes scaleX2{
+@keyframes cfs_scaleX2{
 	0%{
 		transform: scaleX(1);
 	}
@@ -179,14 +193,16 @@
 	}
 }
 
-.scaleY2{
-	animation-name: scaleY2;
+.cfs_scaleY2{
+	animation-name: cfs_scaleY2;
 	animation-duration: 0.75s;
-	-webkit-animation-name: scaleY2;
+	-webkit-animation-name: cfs_scaleY2;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes scaleY2{
+@-webkit-keyframes cfs_scaleY2{
 	0%{
 		-webkit-transform: scaleY(1);
 	}
@@ -195,7 +211,7 @@
 	}
 }
 
-@keyframes scaleY2{
+@keyframes cfs_scaleY2{
 	0%{
 		transform: scaleY(1);
 	}
@@ -204,14 +220,16 @@
 	}
 }
 
-.skew30deg{
-	animation-name: skew30deg;
+.cfs_skew30deg{
+	animation-name: cfs_skew30deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: skew30deg;
+	-webkit-animation-name: cfs_skew30deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes skew30deg{
+@-webkit-keyframes cfs_skew30deg{
 	0%{
 		-webkit-transform: skew(0deg);
 	}
@@ -220,7 +238,7 @@
 	}
 }
 
-@keyframes skew30deg{
+@keyframes cfs_skew30deg{
 	0%{
 		transform: skew(0deg);
 	}
@@ -229,14 +247,16 @@
 	}
 }
 
-.skewX30deg{
-	animation-name: skewX30deg;
+.cfs_skewX30deg{
+	animation-name: cfs_skewX30deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: skewX30deg;
+	-webkit-animation-name: cfs_skewX30deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes skewX30deg{
+@-webkit-keyframes cfs_skewX30deg{
 	0%{
 		-webkit-transform: skewX(0deg);
 	}
@@ -245,7 +265,7 @@
 	}
 }
 
-@keyframes skewX30deg{
+@keyframes cfs_skewX30deg{
 	0%{
 		transform: skewX(0deg);
 	}
@@ -254,14 +274,16 @@
 	}
 }
 
-.skewY30deg{
-	animation-name: skewY30deg;
+.cfs_skewY30deg{
+	animation-name: cfs_skewY30deg;
 	animation-duration: 0.75s;
-	-webkit-animation-name: skewY30deg;
+	-webkit-animation-name: cfs_skewY30deg;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes skewY30deg{
+@-webkit-keyframes cfs_skewY30deg{
 	0%{
 		-webkit-transform: skewY(0deg);
 	}
@@ -270,7 +292,7 @@
 	}
 }
 
-@keyframes skewY30deg{
+@keyframes cfs_skewY30deg{
 	0%{
 		transform: skewY(0deg);
 	}
@@ -279,14 +301,16 @@
 	}
 }
 
-.translateDown{
-	animation-name: translateDown;
+.cfs_translateDown{
+	animation-name: cfs_translateDown;
 	animation-duration: 0.75s;
-	-webkit-animation-name: translateDown;
+	-webkit-animation-name: cfs_translateDown;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes translateDown{
+@-webkit-keyframes cfs_translateDown{
 	0%{
 		-webkit-transform: translateY(0);
 	}
@@ -295,7 +319,7 @@
 	}
 }
 
-@keyframes translateDown{
+@keyframes cfs_translateDown{
 	0%{
 		transform: translateY(0);
 	}
@@ -304,14 +328,16 @@
 	}
 }
 
-.translateLeft{
-	animation-name: translateLeft;
+.cfs_translateLeft{
+	animation-name: cfs_translateLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: translateLeft;
+	-webkit-animation-name: cfs_translateLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes translateLeft{
+@-webkit-keyframes cfs_translateLeft{
 	0%{
 		-webkit-transform: translateX(0);
 	}
@@ -320,7 +346,7 @@
 	}
 }
 
-@keyframes translateLeft{
+@keyframes cfs_translateLeft{
 	0%{
 		transform: translateX(0);
 	}
@@ -329,14 +355,16 @@
 	}
 }
 
-.translateRight{
-	animation-name: translateRight;
+.cfs_translateRight{
+	animation-name: cfs_translateRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: translateRight;
+	-webkit-animation-name: cfs_translateRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes translateRight{
+@-webkit-keyframes cfs_translateRight{
 	0%{
 		-webkit-transform: translateX(0);
 	}
@@ -345,7 +373,7 @@
 	}
 }
 
-@keyframes translateRight{
+@keyframes cfs_translateRight{
 	0%{
 		transform: translateX(0);
 	}
@@ -354,14 +382,16 @@
 	}
 }
 
-.translateUp{
-	animation-name: translateUp;
+.cfs_translateUp{
+	animation-name: cfs_translateUp;
 	animation-duration: 0.75s;
-	-webkit-animation-name: translateUp;
+	-webkit-animation-name: cfs_translateUp;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes translateUp{
+@-webkit-keyframes cfs_translateUp{
 	0%{
 		-webkit-transform: translateY(0);
 	}
@@ -370,7 +400,7 @@
 	}
 }
 
-@keyframes translateUp{
+@keyframes cfs_translateUp{
 	0%{
 		transform: translateY(0);
 	}
@@ -379,16 +409,18 @@
 	}
 }
 
-.beat {
-    animation-name: beat;
+.cfs_beat {
+    animation-name: cfs_beat;
     animation-duration: 0.75s;
     transform-origin: center bottom;
-    -webkit-animation-name: beat;
+    -webkit-animation-name: cfs_beat;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: center bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes beat{
+@-webkit-keyframes cfs_beat{
     0%, 20%, 53%, 80%, 100% {
         -webkit-transform: translate3d(0,0,0);
         -webkit-transition-timing-function: ease-in;
@@ -407,7 +439,7 @@
     }
 }
 
-@keyframes beat{
+@keyframes cfs_beat{
     0%, 20%, 53%, 80%, 100% {
         transform: translate3d(0,0,0);
         transition-timing-function: ease-in;
@@ -426,14 +458,16 @@
     }
 }
 
-.bounce {
-    animation-name: bounce;
+.cfs_bounce {
+    animation-name: cfs_bounce;
     animation-duration: 0.75s;
-    -webkit-animation-name: bounce;
+    -webkit-animation-name: cfs_bounce;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounce{
+@-webkit-keyframes cfs_bounce{
     0%, 50%, 100% {
         -webkit-transform: scale3d(1, 1, 1);
     }
@@ -442,7 +476,7 @@
     }
 }
 
-@keyframes bounce{
+@keyframes cfs_bounce{
     0%, 50%, 100% {
         transform: scale3d(1, 1, 1);
     }
@@ -451,14 +485,16 @@
     }
 }
 
-.emphasize {
-    animation-name: emphasize;
+.cfs_emphasize {
+    animation-name: cfs_emphasize;
     animation-duration: 0.75s;
-    -webkit-animation-name: emphasize;
+    -webkit-animation-name: cfs_emphasize;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes emphasize{
+@-webkit-keyframes cfs_emphasize{
     0%, 100%{
         transform: scale3d(1, 1, 1);
     }
@@ -473,7 +509,7 @@
     }
 }
 
-@keyframes emphasize{
+@keyframes cfs_emphasize{
     0%, 100%{
         transform: scale3d(1, 1, 1);
     }
@@ -488,14 +524,16 @@
     }
 }
 
-.flash {
-    animation-name: flash;
+.cfs_flash {
+    animation-name: cfs_flash;
     animation-duration: 0.75s;
-    -webkit-animation-name: flash;
+    -webkit-animation-name: cfs_flash;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flash{
+@-webkit-keyframes cfs_flash{
     0%, 50%, 100% {
         opacity: 1;
     }
@@ -504,7 +542,7 @@
     }
 }
 
-@keyframes flash{
+@keyframes cfs_flash{
     0%, 50%, 100% {
         opacity: 1;
     }
@@ -513,14 +551,16 @@
     }
 }
 
-.nod {
-    animation-name: nod;
+.cfs_nod {
+    animation-name: cfs_nod;
     animation-duration: 0.75s;
-    -webkit-animation-name: nod;
+    -webkit-animation-name: cfs_nod;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes nod{
+@-webkit-keyframes cfs_nod{
     0%, 100% {
         -webkit-transform: translate3d(0, 0, 0);
     }
@@ -532,7 +572,7 @@
     }
 }
 
-@keyframes nod{
+@keyframes cfs_nod{
     0%, 100% {
         transform: translate3d(0, 0, 0);
     }
@@ -544,14 +584,16 @@
     }
 }
 
-.pulse {
-    animation-name: pulse;
+.cfs_pulse {
+    animation-name: cfs_pulse;
     animation-duration: 0.75s;
-    -webkit-animation-name: pulse;
+    -webkit-animation-name: cfs_pulse;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes pulse{
+@-webkit-keyframes cfs_pulse{
     0%, 100% {
         -webkit-transform: scale3d(1, 1, 1);
     }
@@ -560,7 +602,7 @@
     }
 }
 
-@keyframes pulse{
+@keyframes cfs_pulse{
     0%, 100% {
         transform: scale3d(1, 1, 1);
     }
@@ -569,14 +611,16 @@
     }
 }
 
-.rubberBand {
-    animation-name: rubberBand;
+.cfs_rubberBand {
+    animation-name: cfs_rubberBand;
     animation-duration: 0.75s;
-    -webkit-animation-name: rubberBand;
+    -webkit-animation-name: cfs_rubberBand;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rubberBand{
+@-webkit-keyframes cfs_rubberBand{
     0%, 100% {
         -webkit-transform: scale3d(1, 1, 1);
     }
@@ -597,7 +641,7 @@
     }
 }
 
-@keyframes rubberBand{
+@keyframes cfs_rubberBand{
     0%, 100% {
         transform: scale3d(1, 1, 1);
     }
@@ -618,14 +662,16 @@
     }
 }
 
-.shake {
-    animation-name: shake;
+.cfs_shake {
+    animation-name: cfs_shake;
     animation-duration: 0.75s;
-    -webkit-animation-name: shake;
+    -webkit-animation-name: cfs_shake;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes shake{
+@-webkit-keyframes cfs_shake{
     0%, 100% {
         -webkit-transform: translate3d(0, 0, 0);
     }
@@ -637,7 +683,7 @@
     }
 }
 
-@keyframes shake{
+@keyframes cfs_shake{
     0%, 100% {
         transform: translate3d(0, 0, 0);
     }
@@ -649,16 +695,18 @@
     }
 }
 
-.swing {
-    animation-name: swing;
+.cfs_swing {
+    animation-name: cfs_swing;
     animation-duration: 0.75s;
     transform-origin: top center;
-    -webkit-animation-name: swing;
+    -webkit-animation-name: cfs_swing;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: top center;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes swing{
+@-webkit-keyframes cfs_swing{
     20%{
         -webkit-transform : rotate3d(0, 0, 1, 15deg);
     }
@@ -676,7 +724,7 @@
     }
 }
 
-@keyframes swing{
+@keyframes cfs_swing{
     20%{
         transform : rotate3d(0, 0, 1, 15deg);
     }
@@ -694,14 +742,16 @@
     }
 }
 
-.wobble {
-    animation-name: wobble;
+.cfs_wobble {
+    animation-name: cfs_wobble;
     animation-duration: 0.75s;
-    -webkit-animation-name: wobble;
+    -webkit-animation-name: cfs_wobble;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes wobble{
+@-webkit-keyframes cfs_wobble{
     15%{
         -webkit-transform : translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
     }
@@ -722,7 +772,7 @@
     }
 }
 
-@keyframes wobble{
+@keyframes cfs_wobble{
     15%{
         transform : translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
     }
@@ -743,14 +793,16 @@
     }
 }
 
-.bounceIn{
-	animation-name: bounceIn;
+.cfs_bounceIn{
+	animation-name: cfs_bounceIn;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceIn;
+	-webkit-animation-name: cfs_bounceIn;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceIn{
+@-webkit-keyframes cfs_bounceIn{
 	0%{
 		opacity: 0;
 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -773,7 +825,7 @@
 	}
 }
 
-@keyframes bounceIn{
+@keyframes cfs_bounceIn{
 	0%{
 		opacity: 0;
 		transform: scale3d(0.3, 0.3, 0.3);
@@ -796,14 +848,16 @@
 	}
 }
 
-.bounceInDown{
-	animation-name: bounceInDown;
+.cfs_bounceInDown{
+	animation-name: cfs_bounceInDown;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceInDown;
+	-webkit-animation-name: cfs_bounceInDown;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceInDown{
+@-webkit-keyframes cfs_bounceInDown{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(-300px);
@@ -823,7 +877,7 @@
 	}
 }
 
-@keyframes bounceInDown{
+@keyframes cfs_bounceInDown{
 	0%{
 		opacity: 0;
 		transform: translateY(-300px);
@@ -843,14 +897,16 @@
 	}
 }
 
-.bounceInLeft{
-	animation-name: bounceInLeft;
+.cfs_bounceInLeft{
+	animation-name: cfs_bounceInLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceInLeft;
+	-webkit-animation-name: cfs_bounceInLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceInLeft{
+@-webkit-keyframes cfs_bounceInLeft{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(-300px);
@@ -870,7 +926,7 @@
 	}
 }
 
-@keyframes bounceInLeft{
+@keyframes cfs_bounceInLeft{
 	0%{
 		opacity: 0;
 		transform: translateX(-300px);
@@ -890,14 +946,16 @@
 	}
 }
 
-.bounceInRight{
-	animation-name: bounceInRight;
+.cfs_bounceInRight{
+	animation-name: cfs_bounceInRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceInRight;
+	-webkit-animation-name: cfs_bounceInRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceInRight{
+@-webkit-keyframes cfs_bounceInRight{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(300px);
@@ -917,7 +975,7 @@
 	}
 }
 
-@keyframes bounceInRight{
+@keyframes cfs_bounceInRight{
 	0%{
 		opacity: 0;
 		transform: translateX(300px);
@@ -937,14 +995,16 @@
 	}
 }
 
-.bounceInUp{
-	animation-name: bounceInUp;
+.cfs_bounceInUp{
+	animation-name: cfs_bounceInUp;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceInUp;
+	-webkit-animation-name: cfs_bounceInUp;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceInUp{
+@-webkit-keyframes cfs_bounceInUp{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(300px);
@@ -964,7 +1024,7 @@
 	}
 }
 
-@keyframes bounceInUp{
+@keyframes cfs_bounceInUp{
 	0%{
 		opacity: 0;
 		transform: translateY(300px);
@@ -984,14 +1044,16 @@
 	}
 }
 
-.bounceOut{
-	animation-name: bounceOut;
+.cfs_bounceOut{
+	animation-name: cfs_bounceOut;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceOut;
+	-webkit-animation-name: cfs_bounceOut;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceOut{
+@-webkit-keyframes cfs_bounceOut{
 	20%{
 		-webkit-transform: scale3d(0.9, 0.9, 0.9);
 	}
@@ -1011,7 +1073,7 @@
 	}
 }
 
-@keyframes bounceOut{
+@keyframes cfs_bounceOut{
 	20%{
 		transform: scale3d(0.9, 0.9, 0.9);
 	}
@@ -1031,14 +1093,16 @@
 	}
 }
 
-.bounceOutDown{
-	animation-name: bounceOutDown;
+.cfs_bounceOutDown{
+	animation-name: cfs_bounceOutDown;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceOutDown;
+	-webkit-animation-name: cfs_bounceOutDown;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceOutDown{
+@-webkit-keyframes cfs_bounceOutDown{
 	0%{
 		
 		-webkit-transform: translateY(0px);
@@ -1059,7 +1123,7 @@
 	}
 }
 
-@keyframes bounceOutDown{
+@keyframes cfs_bounceOutDown{
 	0%{
 		transform: translateY(0px);
 	}
@@ -1079,14 +1143,16 @@
 	}
 }
 
-.bounceOutLeft{
-	animation-name: bounceOutLeft;
+.cfs_bounceOutLeft{
+	animation-name: cfs_bounceOutLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceOutLeft;
+	-webkit-animation-name: cfs_bounceOutLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceOutLeft{
+@-webkit-keyframes cfs_bounceOutLeft{
 	0%{
 		
 		-webkit-transform: translateX(0px);
@@ -1107,7 +1173,7 @@
 	}
 }
 
-@keyframes bounceOutLeft{
+@keyframes cfs_bounceOutLeft{
 	0%{
 		transform: translateX(0px);
 	}
@@ -1127,14 +1193,16 @@
 	}
 }
 
-.bounceOutRight{
-	animation-name: bounceOutRight;
+.cfs_bounceOutRight{
+	animation-name: cfs_bounceOutRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceOutRight;
+	-webkit-animation-name: cfs_bounceOutRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceOutRight{
+@-webkit-keyframes cfs_bounceOutRight{
 	0%{
 		
 		-webkit-transform: translateX(0px);
@@ -1155,7 +1223,7 @@
 	}
 }
 
-@keyframes bounceOutRight{
+@keyframes cfs_bounceOutRight{
 	0%{
 		transform: translateX(0px);
 	}
@@ -1175,14 +1243,16 @@
 	}
 }
 
-.bounceOutUp{
-	animation-name: bounceOutUp;
+.cfs_bounceOutUp{
+	animation-name: cfs_bounceOutUp;
 	animation-duration: 0.75s;
-	-webkit-animation-name: bounceOutUp;
+	-webkit-animation-name: cfs_bounceOutUp;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes bounceOutUp{
+@-webkit-keyframes cfs_bounceOutUp{
 	0%{
 		
 		-webkit-transform: translateY(0px);
@@ -1203,7 +1273,7 @@
 	}
 }
 
-@keyframes bounceOutUp{
+@keyframes cfs_bounceOutUp{
 	0%{
 		transform: translateY(0px);
 	}
@@ -1223,16 +1293,18 @@
 	}
 }
 
-.curveIn {
-    animation-name: curveIn;
+.cfs_curveIn {
+    animation-name: cfs_curveIn;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveIn;
+    -webkit-animation-name: cfs_curveIn;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveIn{
+@-webkit-keyframes cfs_curveIn{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
@@ -1246,7 +1318,7 @@
     }
 }
 
-@keyframes curveIn{
+@keyframes cfs_curveIn{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
@@ -1260,16 +1332,18 @@
     }
 }
 
-.curveInDown {
-    animation-name: curveInDown;
+.cfs_curveInDown {
+    animation-name: cfs_curveInDown;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveInDown;
+    -webkit-animation-name: cfs_curveInDown;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveInDown{
+@-webkit-keyframes cfs_curveInDown{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
@@ -1283,7 +1357,7 @@
     }
 }
 
-@keyframes curveInDown{
+@keyframes cfs_curveInDown{
     0%{
         opacity: 0;
         transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
@@ -1297,16 +1371,18 @@
     }
 }
 
-.curveInLeft {
-    animation-name: curveInLeft;
+.cfs_curveInLeft {
+    animation-name: cfs_curveInLeft;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveInLeft;
+    -webkit-animation-name: cfs_curveInLeft;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveInLeft{
+@-webkit-keyframes cfs_curveInLeft{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
@@ -1320,7 +1396,7 @@
     }
 }
 
-@keyframes curveInLeft{
+@keyframes cfs_curveInLeft{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
@@ -1334,16 +1410,18 @@
     }
 }
 
-.curveInRight {
-    animation-name: curveInRight;
+.cfs_curveInRight {
+    animation-name: cfs_curveInRight;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveInRight;
+    -webkit-animation-name: cfs_curveInRight;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveInRight{
+@-webkit-keyframes cfs_curveInRight{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
@@ -1357,7 +1435,7 @@
     }
 }
 
-@keyframes curveInRight{
+@keyframes cfs_curveInRight{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
@@ -1371,16 +1449,18 @@
     }
 }
 
-.curveInUp {
-    animation-name: curveInUp;
+.cfs_curveInUp {
+    animation-name: cfs_curveInUp;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveInUp;
+    -webkit-animation-name: cfs_curveInUp;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveInUp{
+@-webkit-keyframes cfs_curveInUp{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
@@ -1394,7 +1474,7 @@
     }
 }
 
-@keyframes curveInUp{
+@keyframes cfs_curveInUp{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
@@ -1408,16 +1488,18 @@
     }
 }
 
-.curveOut {
-    animation-name: curveOut;
+.cfs_curveOut {
+    animation-name: cfs_curveOut;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveOut;
+    -webkit-animation-name: cfs_curveOut;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveOut{
+@-webkit-keyframes cfs_curveOut{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1431,7 +1513,7 @@
     }
 }
 
-@keyframes curveOut{
+@keyframes cfs_curveOut{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1445,16 +1527,18 @@
     }
 }
 
-.curveOutDown {
-    animation-name: curveOutDown;
+.cfs_curveOutDown {
+    animation-name: cfs_curveOutDown;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveOutDown;
+    -webkit-animation-name: cfs_curveOutDown;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveOutDown{
+@-webkit-keyframes cfs_curveOutDown{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1468,7 +1552,7 @@
     }
 }
 
-@keyframes curveOutDown{
+@keyframes cfs_curveOutDown{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1482,16 +1566,18 @@
     }
 }
 
-.curveOutLeft {
-    animation-name: curveOutLeft;
+.cfs_curveOutLeft {
+    animation-name: cfs_curveOutLeft;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveOutLeft;
+    -webkit-animation-name: cfs_curveOutLeft;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveOutLeft{
+@-webkit-keyframes cfs_curveOutLeft{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1505,7 +1591,7 @@
     }
 }
 
-@keyframes curveOutLeft{
+@keyframes cfs_curveOutLeft{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1519,16 +1605,18 @@
     }
 }
 
-.curveOutRight {
-    animation-name: curveOutRight;
+.cfs_curveOutRight {
+    animation-name: cfs_curveOutRight;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveOutRight;
+    -webkit-animation-name: cfs_curveOutRight;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveOutRight{
+@-webkit-keyframes cfs_curveOutRight{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1542,7 +1630,7 @@
     }
 }
 
-@keyframes curveOutRight{
+@keyframes cfs_curveOutRight{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1556,16 +1644,18 @@
     }
 }
 
-.curveOutUp {
-    animation-name: curveOutUp;
+.cfs_curveOutUp {
+    animation-name: cfs_curveOutUp;
     animation-duration: 0.75s;
-    -webkit-animation-name: curveOutUp;
+    -webkit-animation-name: cfs_curveOutUp;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes curveOutUp{
+@-webkit-keyframes cfs_curveOutUp{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1579,7 +1669,7 @@
     }
 }
 
-@keyframes curveOutUp{
+@keyframes cfs_curveOutUp{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -1593,14 +1683,16 @@
     }
 }
 
-.fadeIn{
-	animation-name: fadeIn;
+.cfs_fadeIn{
+	animation-name: cfs_fadeIn;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeIn;
+	-webkit-animation-name: cfs_fadeIn;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeIn{
+@-webkit-keyframes cfs_fadeIn{
 	0%{
 		opacity: 0;
 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -1611,7 +1703,7 @@
 	}
 }
 
-@keyframes fadeIn{
+@keyframes cfs_fadeIn{
 	0%{
 		opacity: 0;
 		transform: scale3d(0.3, 0.3, 0.3);
@@ -1622,14 +1714,16 @@
 	}
 }
 
-.fadeInDown{
-	animation-name: fadeInDown;
+.cfs_fadeInDown{
+	animation-name: cfs_fadeInDown;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeInDown;
+	-webkit-animation-name: cfs_fadeInDown;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeInDown{
+@-webkit-keyframes cfs_fadeInDown{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(100%);
@@ -1640,7 +1734,7 @@
 	}
 }
 
-@keyframes fadeInDown{
+@keyframes cfs_fadeInDown{
 	0%{
 		opacity: 0;
 		transform: translateY(100%);
@@ -1651,14 +1745,16 @@
 	}
 }
 
-.fadeInLeft{
-	animation-name: fadeInLeft;
+.cfs_fadeInLeft{
+	animation-name: cfs_fadeInLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeInLeft;
+	-webkit-animation-name: cfs_fadeInLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeInLeft{
+@-webkit-keyframes cfs_fadeInLeft{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(-100%);
@@ -1669,7 +1765,7 @@
 	}
 }
 
-@keyframes fadeInLeft{
+@keyframes cfs_fadeInLeft{
 	0%{
 		opacity: 0;
 		transform: translateX(-100%);
@@ -1680,14 +1776,16 @@
 	}
 }
 
-.fadeInRight{
-	animation-name: fadeInRight;
+.cfs_fadeInRight{
+	animation-name: cfs_fadeInRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeInRight;
+	-webkit-animation-name: cfs_fadeInRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeInRight{
+@-webkit-keyframes cfs_fadeInRight{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(100%);
@@ -1698,7 +1796,7 @@
 	}
 }
 
-@keyframes fadeInRight{
+@keyframes cfs_fadeInRight{
 	0%{
 		opacity: 0;
 		transform: translateX(100%);
@@ -1709,14 +1807,16 @@
 	}
 }
 
-.fadeInUp{
-	animation-name: fadeInUp;
+.cfs_fadeInUp{
+	animation-name: cfs_fadeInUp;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeInUp;
+	-webkit-animation-name: cfs_fadeInUp;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeInUp{
+@-webkit-keyframes cfs_fadeInUp{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(-100%);
@@ -1727,7 +1827,7 @@
 	}
 }
 
-@keyframes fadeInUp{
+@keyframes cfs_fadeInUp{
 	0%{
 		opacity: 0;
 		transform: translateY(-100%);
@@ -1738,14 +1838,16 @@
 	}
 }
 
-.fadeOut{
-	animation-name: fadeOut;
+.cfs_fadeOut{
+	animation-name: cfs_fadeOut;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeOut;
+	-webkit-animation-name: cfs_fadeOut;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeOut{
+@-webkit-keyframes cfs_fadeOut{
 	10%{
 		opacity: 1;
 		-webkit-transform: scale3d(1, 1, 1);
@@ -1756,7 +1858,7 @@
 	}
 }
 
-@keyframes fadeOut{
+@keyframes cfs_fadeOut{
 	10%{
 		opacity: 1;
 		transform: scale3d(1, 1, 1);
@@ -1767,14 +1869,16 @@
 	}
 }
 
-.fadeOutDown{
-	animation-name: fadeOutDown;
+.cfs_fadeOutDown{
+	animation-name: cfs_fadeOutDown;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeOutDown;
+	-webkit-animation-name: cfs_fadeOutDown;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeOutDown{
+@-webkit-keyframes cfs_fadeOutDown{
 	10%{
 		opacity: 1;
 		-webkit-transform: none;
@@ -1785,7 +1889,7 @@
 	}
 }
 
-@keyframes fadeOutDown{
+@keyframes cfs_fadeOutDown{
 	10%{
 		opacity: 1;
 		transform: none;
@@ -1796,14 +1900,16 @@
 	}
 }
 
-.fadeOutLeft{
-	animation-name: fadeOutLeft;
+.cfs_fadeOutLeft{
+	animation-name: cfs_fadeOutLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeOutLeft;
+	-webkit-animation-name: cfs_fadeOutLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeOutLeft{
+@-webkit-keyframes cfs_fadeOutLeft{
 	10%{
 		opacity: 1;
 		-webkit-transform: none;
@@ -1814,7 +1920,7 @@
 	}
 }
 
-@keyframes fadeOutLeft{
+@keyframes cfs_fadeOutLeft{
 	10%{
 		opacity: 1;
 		transform: none;
@@ -1825,14 +1931,16 @@
 	}
 }
 
-.fadeOutRight{
-	animation-name: fadeOutRight;
+.cfs_fadeOutRight{
+	animation-name: cfs_fadeOutRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeOutRight;
+	-webkit-animation-name: cfs_fadeOutRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeOutRight{
+@-webkit-keyframes cfs_fadeOutRight{
 	10%{
 		opacity: 1;
 		-webkit-transform: none;
@@ -1843,7 +1951,7 @@
 	}
 }
 
-@keyframes fadeOutRight{
+@keyframes cfs_fadeOutRight{
 	10%{
 		opacity: 1;
 		transform: none;
@@ -1854,14 +1962,16 @@
 	}
 }
 
-.fadeOutUp{
-	animation-name: fadeOutUp;
+.cfs_fadeOutUp{
+	animation-name: cfs_fadeOutUp;
 	animation-duration: 0.75s;
-	-webkit-animation-name: fadeOutUp;
+	-webkit-animation-name: cfs_fadeOutUp;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeOutUp{
+@-webkit-keyframes cfs_fadeOutUp{
 	10%{
 		opacity: 1;
 		-webkit-transform: none;
@@ -1872,7 +1982,7 @@
 	}
 }
 
-@keyframes fadeOutUp{
+@keyframes cfs_fadeOutUp{
 	10%{
 		opacity: 1;
 		transform: none;
@@ -1883,14 +1993,16 @@
 	}
 }
 
-.flipFadeX {
-    animation-name: flipFadeX;
+.cfs_flipFadeX {
+    animation-name: cfs_flipFadeX;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipFadeX;
+    -webkit-animation-name: cfs_flipFadeX;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipFadeX{
+@-webkit-keyframes cfs_flipFadeX{
     0%{
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
     }
@@ -1899,7 +2011,7 @@
     }
 }
 
-@keyframes flipFadeX{
+@keyframes cfs_flipFadeX{
     0%{
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
     }
@@ -1908,14 +2020,16 @@
     }
 }
 
-.flipFadeY {
-    animation-name: flipFadeY;
+.cfs_flipFadeY {
+    animation-name: cfs_flipFadeY;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipFadeY;
+    -webkit-animation-name: cfs_flipFadeY;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipFadeY{
+@-webkit-keyframes cfs_flipFadeY{
     0%{
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
     }
@@ -1924,7 +2038,7 @@
     }
 }
 
-@keyframes flipFadeY{
+@keyframes cfs_flipFadeY{
     0%{
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
     }
@@ -1933,14 +2047,16 @@
     }
 }
 
-.flipFlyX {
-    animation-name: flipFlyX;
+.cfs_flipFlyX {
+    animation-name: cfs_flipFlyX;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipFlyX;
+    -webkit-animation-name: cfs_flipFlyX;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipFlyX{
+@-webkit-keyframes cfs_flipFlyX{
     0%{
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
         -webkit-animation-timing-function: ease-out;
@@ -1959,7 +2075,7 @@
     }
 }
 
-@keyframes flipFlyX{
+@keyframes cfs_flipFlyX{
     0%{
         transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
         animation-timing-function: ease-out;
@@ -1978,14 +2094,16 @@
     }
 }
 
-.flipFlyY {
-    animation-name: flipFlyY;
+.cfs_flipFlyY {
+    animation-name: cfs_flipFlyY;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipFlyY;
+    -webkit-animation-name: cfs_flipFlyY;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipFlyY{
+@-webkit-keyframes cfs_flipFlyY{
     0%{
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
         -webkit-animation-timing-function: ease-out;
@@ -2004,7 +2122,7 @@
     }
 }
 
-@keyframes flipFlyY{
+@keyframes cfs_flipFlyY{
     0%{
         transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
         animation-timing-function: ease-out;
@@ -2023,14 +2141,16 @@
     }
 }
 
-.flipInX {
-    animation-name: flipInX;
+.cfs_flipInX {
+    animation-name: cfs_flipInX;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipInX;
+    -webkit-animation-name: cfs_flipInX;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipInX{
+@-webkit-keyframes cfs_flipInX{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -180deg);
@@ -2042,7 +2162,7 @@
     }
 }
 
-@keyframes flipInX{
+@keyframes cfs_flipInX{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, -180deg);
@@ -2054,14 +2174,16 @@
     }
 }
 
-.flipInY {
-    animation-name: flipInY;
+.cfs_flipInY {
+    animation-name: cfs_flipInY;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipInY;
+    -webkit-animation-name: cfs_flipInY;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipInY{
+@-webkit-keyframes cfs_flipInY{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -180deg);
@@ -2073,7 +2195,7 @@
     }
 }
 
-@keyframes flipInY{
+@keyframes cfs_flipInY{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, -180deg);
@@ -2085,14 +2207,16 @@
     }
 }
 
-.flipOutX {
-    animation-name: flipOutX;
+.cfs_flipOutX {
+    animation-name: cfs_flipOutX;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipOutX;
+    -webkit-animation-name: cfs_flipOutX;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipOutX{
+@-webkit-keyframes cfs_flipOutX{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -2104,7 +2228,7 @@
     }
 }
 
-@keyframes flipOutX{
+@keyframes cfs_flipOutX{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -2116,14 +2240,16 @@
     }
 }
 
-.flipOutY {
-    animation-name: flipOutY;
+.cfs_flipOutY {
+    animation-name: cfs_flipOutY;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipOutY;
+    -webkit-animation-name: cfs_flipOutY;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipOutY{
+@-webkit-keyframes cfs_flipOutY{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -2135,7 +2261,7 @@
     }
 }
 
-@keyframes flipOutY{
+@keyframes cfs_flipOutY{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -2147,14 +2273,16 @@
     }
 }
 
-.flipX {
-    animation-name: flipX;
+.cfs_flipX {
+    animation-name: cfs_flipX;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipX;
+    -webkit-animation-name: cfs_flipX;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipX{
+@-webkit-keyframes cfs_flipX{
     0%{
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
         -webkit-animation-timing-function: ease-out;
@@ -2173,7 +2301,7 @@
     }
 }
 
-@keyframes flipX{
+@keyframes cfs_flipX{
     0%{
         transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
         animation-timing-function: ease-out;
@@ -2192,14 +2320,16 @@
     }
 }
 
-.flipY {
-    animation-name: flipY;
+.cfs_flipY {
+    animation-name: cfs_flipY;
     animation-duration: 0.75s;
-    -webkit-animation-name: flipY;
+    -webkit-animation-name: cfs_flipY;
     -webkit-animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flipY{
+@-webkit-keyframes cfs_flipY{
     0%{
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
         -webkit-animation-timing-function: ease-out;
@@ -2218,7 +2348,7 @@
     }
 }
 
-@keyframes flipY{
+@keyframes cfs_flipY{
     0%{
         transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
         animation-timing-function: ease-out;
@@ -2237,16 +2367,18 @@
     }
 }
 
-.lightSpeedIn{
-	animation-name: lightSpeedIn;
+.cfs_lightSpeedIn{
+	animation-name: cfs_lightSpeedIn;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-out;
-	-webkit-animation-name: lightSpeedIn;
+	-webkit-animation-name: cfs_lightSpeedIn;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedIn{
+@-webkit-keyframes cfs_lightSpeedIn{
 	0%{
 		opacity: 0;
 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -2263,7 +2395,7 @@
 	}
 }
 
-@keyframes lightSpeedIn{
+@keyframes cfs_lightSpeedIn{
 	0%{
 		opacity: 0;
 		transform: scale3d(0.3, 0.3, 0.3);
@@ -2280,16 +2412,18 @@
 	}
 }
 
-.lightSpeedInDown{
-	animation-name: lightSpeedInDown;
+.cfs_lightSpeedInDown{
+	animation-name: cfs_lightSpeedInDown;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-out;
-	-webkit-animation-name: lightSpeedInDown;
+	-webkit-animation-name: cfs_lightSpeedInDown;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedInDown{
+@-webkit-keyframes cfs_lightSpeedInDown{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(-300px) skewY(-10deg);
@@ -2306,7 +2440,7 @@
 	}
 }
 
-@keyframes lightSpeedInDown{
+@keyframes cfs_lightSpeedInDown{
 	0%{
 		opacity: 0;
 		transform: translateY(-300px) skewY(-10deg);
@@ -2323,16 +2457,18 @@
 	}	
 }
 
-.lightSpeedInLeft{
-	animation-name: lightSpeedInLeft;
+.cfs_lightSpeedInLeft{
+	animation-name: cfs_lightSpeedInLeft;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-out;
-	-webkit-animation-name: lightSpeedInLeft;
+	-webkit-animation-name: cfs_lightSpeedInLeft;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedInLeft{
+@-webkit-keyframes cfs_lightSpeedInLeft{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(-300px) skewX(30deg);
@@ -2349,7 +2485,7 @@
 	}
 }
 
-@keyframes lightSpeedInLeft{
+@keyframes cfs_lightSpeedInLeft{
 	0%{
 		opacity: 0;
 		transform: translateX(-300px) skewX(30deg);
@@ -2366,16 +2502,18 @@
 	}	
 }
 
-.lightSpeedInRight{
-	animation-name: lightSpeedInRight;
+.cfs_lightSpeedInRight{
+	animation-name: cfs_lightSpeedInRight;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-out;
-	-webkit-animation-name: lightSpeedInRight;
+	-webkit-animation-name: cfs_lightSpeedInRight;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedInRight{
+@-webkit-keyframes cfs_lightSpeedInRight{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateX(300px) skewX(-30deg);
@@ -2392,7 +2530,7 @@
 	}
 }
 
-@keyframes lightSpeedInRight{
+@keyframes cfs_lightSpeedInRight{
 	0%{
 		opacity: 0;
 		transform: translateX(300px) skewX(-30deg);
@@ -2409,16 +2547,18 @@
 	}	
 }
 
-.lightSpeedInUp{
-	animation-name: lightSpeedInUp;
+.cfs_lightSpeedInUp{
+	animation-name: cfs_lightSpeedInUp;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-out;
-	-webkit-animation-name: lightSpeedInUp;
+	-webkit-animation-name: cfs_lightSpeedInUp;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedInUp{
+@-webkit-keyframes cfs_lightSpeedInUp{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(300px) skewY(10deg);
@@ -2435,7 +2575,7 @@
 	}
 }
 
-@keyframes lightSpeedInUp{
+@keyframes cfs_lightSpeedInUp{
 	0%{
 		opacity: 0;
 		transform: translateY(300px) skewY(10deg);
@@ -2452,16 +2592,18 @@
 	}	
 }
 
-.lightSpeedOut{
-	animation-name: lightSpeedOut;
+.cfs_lightSpeedOut{
+	animation-name: cfs_lightSpeedOut;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in;
-	-webkit-animation-name: lightSpeedOut;
+	-webkit-animation-name: cfs_lightSpeedOut;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedOut{
+@-webkit-keyframes cfs_lightSpeedOut{
 	0%{
 		opacity: 1;
 		-webkit-transform: scale3d(1, 1, 1);
@@ -2475,7 +2617,7 @@
 	}
 }
 
-@keyframes lightSpeedOut{
+@keyframes cfs_lightSpeedOut{
 	0%{
 		opacity: 1;	
 		transform: scale3d(1, 1, 1);
@@ -2489,16 +2631,18 @@
 	}
 }
 
-.lightSpeedOutDown{
-	animation-name: lightSpeedOutDown;
+.cfs_lightSpeedOutDown{
+	animation-name: cfs_lightSpeedOutDown;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-in;
-	-webkit-animation-name: lightSpeedOutDown;
+	-webkit-animation-name: cfs_lightSpeedOutDown;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedOutDown{
+@-webkit-keyframes cfs_lightSpeedOutDown{
 	0%{
 		opacity: 1;	
 	}
@@ -2508,7 +2652,7 @@
 	}
 }
 
-@keyframes lightSpeedOutDown{
+@keyframes cfs_lightSpeedOutDown{
 	0%{
 		opacity: 1;	
 	}
@@ -2518,16 +2662,18 @@
 	}
 }
 
-.lightSpeedOutLeft{
-	animation-name: lightSpeedOutLeft;
+.cfs_lightSpeedOutLeft{
+	animation-name: cfs_lightSpeedOutLeft;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in;
-	-webkit-animation-name: lightSpeedOutLeft;
+	-webkit-animation-name: cfs_lightSpeedOutLeft;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedOutLeft{
+@-webkit-keyframes cfs_lightSpeedOutLeft{
 	10%{
 		opacity: 1;
 	}
@@ -2537,7 +2683,7 @@
 	}
 }
 
-@keyframes lightSpeedOutLeft{
+@keyframes cfs_lightSpeedOutLeft{
 	10%{
 		opacity: 1;
 	}
@@ -2547,16 +2693,18 @@
 	}
 }
 
-.lightSpeedOutRight{
-	animation-name: lightSpeedOutRight;
+.cfs_lightSpeedOutRight{
+	animation-name: cfs_lightSpeedOutRight;
 	animation-duration: 0.5s;
 	animation-timing-function: ease-in;
-	-webkit-animation-name: lightSpeedOutRight;
+	-webkit-animation-name: cfs_lightSpeedOutRight;
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedOutRight{
+@-webkit-keyframes cfs_lightSpeedOutRight{
 	10%{
 		opacity: 1;
 	}
@@ -2566,7 +2714,7 @@
 	}
 }
 
-@keyframes lightSpeedOutRight{
+@keyframes cfs_lightSpeedOutRight{
 	10%{
 		opacity: 1;
 	}
@@ -2576,16 +2724,18 @@
 	}
 }
 
-.lightSpeedOutUp{
-	animation-name: lightSpeedOutUp;
+.cfs_lightSpeedOutUp{
+	animation-name: cfs_lightSpeedOutUp;
 	animation-duration: 0.75s;
 	animation-timing-function: ease-in;
-	-webkit-animation-name: lightSpeedOutUp;
+	-webkit-animation-name: cfs_lightSpeedOutUp;
 	-webkit-animation-duration: 0.75s;
 	-webkit-animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes lightSpeedOutUp{
+@-webkit-keyframes cfs_lightSpeedOutUp{
 	0%{
 		opacity: 1;	
 	}
@@ -2595,7 +2745,7 @@
 	}
 }
 
-@keyframes lightSpeedOutUp{
+@keyframes cfs_lightSpeedOutUp{
 	0%{
 		opacity: 1;	
 	}
@@ -2605,14 +2755,16 @@
 	}
 }
 
-.rotateIn{
-	animation-name: rotateIn;
+.cfs_rotateIn{
+	animation-name: cfs_rotateIn;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateIn;
+	-webkit-animation-name: cfs_rotateIn;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateIn{
+@-webkit-keyframes cfs_rotateIn{
 	0%{
 		opacity: 0;
 		-webkit-transform: rotate(-200deg);
@@ -2623,7 +2775,7 @@
 	}
 }
 
-@keyframes rotateIn{
+@keyframes cfs_rotateIn{
 	0%{
 		opacity: 0;
 		transform: rotate(-200deg);
@@ -2634,14 +2786,16 @@
 	}
 }
 
-.rotateInDownLeft{
-	animation-name: rotateInDownLeft;
+.cfs_rotateInDownLeft{
+	animation-name: cfs_rotateInDownLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateInDownLeft;
+	-webkit-animation-name: cfs_rotateInDownLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateInDownLeft{
+@-webkit-keyframes cfs_rotateInDownLeft{
 	0%{
 		opacity: 0;
 		-webkit-transform-origin: left bottom;
@@ -2654,7 +2808,7 @@
 	}
 }
 
-@keyframes rotateInDownLeft{
+@keyframes cfs_rotateInDownLeft{
 	0%{
 		opacity: 0;
 		transform-origin: left bottom;
@@ -2667,14 +2821,16 @@
 	}
 }
 
-.rotateInDownRight{
-	animation-name: rotateInDownRight;
+.cfs_rotateInDownRight{
+	animation-name: cfs_rotateInDownRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateInDownRight;
+	-webkit-animation-name: cfs_rotateInDownRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateInDownRight{
+@-webkit-keyframes cfs_rotateInDownRight{
 	0%{
 		opacity: 0;
 		-webkit-transform-origin: right bottom;
@@ -2687,7 +2843,7 @@
 	}
 }
 
-@keyframes rotateInDownRight{
+@keyframes cfs_rotateInDownRight{
 	0%{
 		opacity: 0;
 		transform-origin: right bottom;
@@ -2700,14 +2856,16 @@
 	}
 }
 
-.rotateInUpLeft{
-	animation-name: rotateInUpLeft;
+.cfs_rotateInUpLeft{
+	animation-name: cfs_rotateInUpLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateInUpLeft;
+	-webkit-animation-name: cfs_rotateInUpLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateInUpLeft{
+@-webkit-keyframes cfs_rotateInUpLeft{
 	0%{
 		opacity: 0;
 		-webkit-transform-origin: left top;
@@ -2720,7 +2878,7 @@
 	}
 }
 
-@keyframes rotateInUpLeft{
+@keyframes cfs_rotateInUpLeft{
 	0%{
 		opacity: 0;
 		transform-origin: left top;
@@ -2733,14 +2891,16 @@
 	}
 }
 
-.rotateInUpRight{
-	animation-name: rotateInUpRight;
+.cfs_rotateInUpRight{
+	animation-name: cfs_rotateInUpRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateInUpRight;
+	-webkit-animation-name: cfs_rotateInUpRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateInUpRight{
+@-webkit-keyframes cfs_rotateInUpRight{
 	0%{
 		opacity: 0;
 		-webkit-transform-origin: right top;
@@ -2753,7 +2913,7 @@
 	}
 }
 
-@keyframes rotateInUpRight{
+@keyframes cfs_rotateInUpRight{
 	0%{
 		opacity: 0;
 		transform-origin: right top;
@@ -2766,14 +2926,16 @@
 	}
 }
 
-.rotateOut{
-	animation-name: rotateOut;
+.cfs_rotateOut{
+	animation-name: cfs_rotateOut;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateOut;
+	-webkit-animation-name: cfs_rotateOut;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateOut{
+@-webkit-keyframes cfs_rotateOut{
 	0%{
 		opacity: 1;
 		-webkit-transform: rotate(0deg);
@@ -2784,7 +2946,7 @@
 	}
 }
 
-@keyframes rotateOut{
+@keyframes cfs_rotateOut{
 	0%{
 		opacity: 0;
 		transform: rotate(200deg);
@@ -2795,14 +2957,16 @@
 	}
 }
 
-.rotateOutDownLeft{
-	animation-name: rotateOutDownLeft;
+.cfs_rotateOutDownLeft{
+	animation-name: cfs_rotateOutDownLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateOutDownLeft;
+	-webkit-animation-name: cfs_rotateOutDownLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateOutDownLeft{
+@-webkit-keyframes cfs_rotateOutDownLeft{
 	0%{
 		opacity: 1;
 		-webkit-transform-origin: left top;
@@ -2815,7 +2979,7 @@
 	}
 }
 
-@keyframes rotateOutDownLeft{
+@keyframes cfs_rotateOutDownLeft{
 	0%{
 		opacity: 1;
 		transform-origin: left top;
@@ -2828,14 +2992,16 @@
 	}
 }
 
-.rotateOutDownRight{
-	animation-name: rotateOutDownRight;
+.cfs_rotateOutDownRight{
+	animation-name: cfs_rotateOutDownRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateOutDownRight;
+	-webkit-animation-name: cfs_rotateOutDownRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateOutDownRight{
+@-webkit-keyframes cfs_rotateOutDownRight{
 	0%{
 		opacity: 1;
 		-webkit-transform-origin: right top;
@@ -2848,7 +3014,7 @@
 	}
 }
 
-@keyframes rotateOutDownRight{
+@keyframes cfs_rotateOutDownRight{
 	0%{
 		opacity: 1;
 		transform-origin: right top;
@@ -2861,14 +3027,16 @@
 	}
 }
 
-.rotateOutUpLeft{
-	animation-name: rotateOutUpLeft;
+.cfs_rotateOutUpLeft{
+	animation-name: cfs_rotateOutUpLeft;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateOutUpLeft;
+	-webkit-animation-name: cfs_rotateOutUpLeft;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateOutUpLeft{
+@-webkit-keyframes cfs_rotateOutUpLeft{
 	0%{
 		opacity: 1;
 		-webkit-transform-origin: left bottom;
@@ -2881,7 +3049,7 @@
 	}
 }
 
-@keyframes rotateOutUpLeft{
+@keyframes cfs_rotateOutUpLeft{
 	0%{
 		opacity: 1;
 		transform-origin: left bottom;
@@ -2894,14 +3062,16 @@
 	}
 }
 
-.rotateOutUpRight{
-	animation-name: rotateOutUpRight;
+.cfs_rotateOutUpRight{
+	animation-name: cfs_rotateOutUpRight;
 	animation-duration: 0.75s;
-	-webkit-animation-name: rotateOutUpRight;
+	-webkit-animation-name: cfs_rotateOutUpRight;
 	-webkit-animation-duration: 0.75s;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateOutUpRight{
+@-webkit-keyframes cfs_rotateOutUpRight{
 	0%{
 		opacity: 1;
 		-webkit-transform-origin: right bottom;
@@ -2914,7 +3084,7 @@
 	}
 }
 
-@keyframes rotateOutUpRight{
+@keyframes cfs_rotateOutUpRight{
 	0%{
 		opacity: 1;
 		transform-origin: right bottom;
@@ -2927,16 +3097,18 @@
 	}
 }
 
-.trunBottom {
-    animation-name: trunBottom;
+.cfs_trunBottom {
+    animation-name: cfs_trunBottom;
     animation-duration: 0.75s;
     transform-origin: left bottom;
-    -webkit-animation-name: trunBottom;
+    -webkit-animation-name: cfs_trunBottom;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunBottom{
+@-webkit-keyframes cfs_trunBottom{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
@@ -2957,7 +3129,7 @@
     }
 }
 
-@keyframes trunBottom{
+@keyframes cfs_trunBottom{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, -360deg);
@@ -2979,16 +3151,18 @@
     }
 }
 
-.trunInBottomDown {
-    animation-name: trunInBottomDown;
+.cfs_trunInBottomDown {
+    animation-name: cfs_trunInBottomDown;
     animation-duration: 0.75s;
     transform-origin: right bottom;
-    -webkit-animation-name: trunInBottomDown;
+    -webkit-animation-name: cfs_trunInBottomDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInBottomDown{
+@-webkit-keyframes cfs_trunInBottomDown{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
@@ -3000,7 +3174,7 @@
     }
 }
 
-@keyframes trunInBottomDown{
+@keyframes cfs_trunInBottomDown{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
@@ -3012,16 +3186,18 @@
     }
 }
 
-.trunInBottomUp {
-    animation-name: trunInBottomUp;
+.cfs_trunInBottomUp {
+    animation-name: cfs_trunInBottomUp;
     animation-duration: 0.75s;
     transform-origin: right bottom;
-    -webkit-animation-name: trunInBottomUp;
+    -webkit-animation-name: cfs_trunInBottomUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInBottomUp{
+@-webkit-keyframes cfs_trunInBottomUp{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 90deg);
@@ -3033,7 +3209,7 @@
     }
 }
 
-@keyframes trunInBottomUp{
+@keyframes cfs_trunInBottomUp{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, 90deg);
@@ -3045,16 +3221,18 @@
     }
 }
 
-.trunInLeftDown {
-    animation-name: trunInLeftDown;
+.cfs_trunInLeftDown {
+    animation-name: cfs_trunInLeftDown;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunInLeftDown;
+    -webkit-animation-name: cfs_trunInLeftDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInLeftDown{
+@-webkit-keyframes cfs_trunInLeftDown{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
@@ -3066,7 +3244,7 @@
     }
 }
 
-@keyframes trunInLeftDown{
+@keyframes cfs_trunInLeftDown{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
@@ -3078,16 +3256,18 @@
     }
 }
 
-.trunInLeftUp {
-    animation-name: trunInLeftUp;
+.cfs_trunInLeftUp {
+    animation-name: cfs_trunInLeftUp;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunInLeftUp;
+    -webkit-animation-name: cfs_trunInLeftUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInLeftUp{
+@-webkit-keyframes cfs_trunInLeftUp{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
@@ -3099,7 +3279,7 @@
     }
 }
 
-@keyframes trunInLeftUp{
+@keyframes cfs_trunInLeftUp{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
@@ -3111,16 +3291,18 @@
     }
 }
 
-.trunInRightDown {
-    animation-name: trunInRightDown;
+.cfs_trunInRightDown {
+    animation-name: cfs_trunInRightDown;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunInRightDown;
+    -webkit-animation-name: cfs_trunInRightDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInRightDown{
+@-webkit-keyframes cfs_trunInRightDown{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
@@ -3132,7 +3314,7 @@
     }
 }
 
-@keyframes trunInRightDown{
+@keyframes cfs_trunInRightDown{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, 90deg);
@@ -3144,16 +3326,18 @@
     }
 }
 
-.trunInRightUp {
-    animation-name: trunInRightUp;
+.cfs_trunInRightUp {
+    animation-name: cfs_trunInRightUp;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunInRightUp;
+    -webkit-animation-name: cfs_trunInRightUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInRightUp{
+@-webkit-keyframes cfs_trunInRightUp{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
@@ -3165,7 +3349,7 @@
     }
 }
 
-@keyframes trunInRightUp{
+@keyframes cfs_trunInRightUp{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, -90deg);
@@ -3177,16 +3361,18 @@
     }
 }
 
-.trunInTopDown {
-    animation-name: trunInTopDown;
+.cfs_trunInTopDown {
+    animation-name: cfs_trunInTopDown;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunInTopDown;
+    -webkit-animation-name: cfs_trunInTopDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInTopDown{
+@-webkit-keyframes cfs_trunInTopDown{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 90deg);
@@ -3198,7 +3384,7 @@
     }
 }
 
-@keyframes trunInTopDown{
+@keyframes cfs_trunInTopDown{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, 90deg);
@@ -3210,16 +3396,18 @@
     }
 }
 
-.trunInTopUp {
-    animation-name: trunInTopUp;
+.cfs_trunInTopUp {
+    animation-name: cfs_trunInTopUp;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunInTopUp;
+    -webkit-animation-name: cfs_trunInTopUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunInTopUp{
+@-webkit-keyframes cfs_trunInTopUp{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
@@ -3231,7 +3419,7 @@
     }
 }
 
-@keyframes trunInTopUp{
+@keyframes cfs_trunInTopUp{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, -90deg);
@@ -3243,16 +3431,18 @@
     }
 }
 
-.trunLeft {
-    animation-name: trunLeft;
+.cfs_trunLeft {
+    animation-name: cfs_trunLeft;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunLeft;
+    -webkit-animation-name: cfs_trunLeft;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunLeft{
+@-webkit-keyframes cfs_trunLeft{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 360deg);
@@ -3273,7 +3463,7 @@
     }
 }
 
-@keyframes trunLeft{
+@keyframes cfs_trunLeft{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, 360deg);
@@ -3295,16 +3485,18 @@
     }
 }
 
-.trunOutBottomDown {
-    animation-name: trunOutBottomDown;
+.cfs_trunOutBottomDown {
+    animation-name: cfs_trunOutBottomDown;
     animation-duration: 0.75s;
     transform-origin: right bottom;
-    -webkit-animation-name: trunOutBottomDown;
+    -webkit-animation-name: cfs_trunOutBottomDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutBottomDown{
+@-webkit-keyframes cfs_trunOutBottomDown{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3316,7 +3508,7 @@
     }
 }
 
-@keyframes trunOutBottomDown{
+@keyframes cfs_trunOutBottomDown{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3328,16 +3520,18 @@
     }
 }
 
-.trunOutBottomUp {
-    animation-name: trunOutBottomUp;
+.cfs_trunOutBottomUp {
+    animation-name: cfs_trunOutBottomUp;
     animation-duration: 0.75s;
     transform-origin: right bottom;
-    -webkit-animation-name: trunOutBottomUp;
+    -webkit-animation-name: cfs_trunOutBottomUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right bottom;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutBottomUp{
+@-webkit-keyframes cfs_trunOutBottomUp{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3349,7 +3543,7 @@
     }
 }
 
-@keyframes trunOutBottomUp{
+@keyframes cfs_trunOutBottomUp{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3361,16 +3555,18 @@
     }
 }
 
-.trunOutLeftDown {
-    animation-name: trunOutLeftDown;
+.cfs_trunOutLeftDown {
+    animation-name: cfs_trunOutLeftDown;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunOutLeftDown;
+    -webkit-animation-name: cfs_trunOutLeftDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutLeftDown{
+@-webkit-keyframes cfs_trunOutLeftDown{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3382,7 +3578,7 @@
     }
 }
 
-@keyframes trunOutLeftDown{
+@keyframes cfs_trunOutLeftDown{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3394,16 +3590,18 @@
     }
 }
 
-.trunOutLeftUp {
-    animation-name: trunOutLeftUp;
+.cfs_trunOutLeftUp {
+    animation-name: cfs_trunOutLeftUp;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunOutLeftUp;
+    -webkit-animation-name: cfs_trunOutLeftUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutLeftUp{
+@-webkit-keyframes cfs_trunOutLeftUp{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3415,7 +3613,7 @@
     }
 }
 
-@keyframes trunOutLeftUp{
+@keyframes cfs_trunOutLeftUp{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3427,16 +3625,18 @@
     }
 }
 
-.trunOutRightDown {
-    animation-name: trunOutRightDown;
+.cfs_trunOutRightDown {
+    animation-name: cfs_trunOutRightDown;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunOutRightDown;
+    -webkit-animation-name: cfs_trunOutRightDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutRightDown{
+@-webkit-keyframes cfs_trunOutRightDown{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3448,7 +3648,7 @@
     }
 }
 
-@keyframes trunOutRightDown{
+@keyframes cfs_trunOutRightDown{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3460,16 +3660,18 @@
     }
 }
 
-.trunOutRightUp {
-    animation-name: trunOutRightUp;
+.cfs_trunOutRightUp {
+    animation-name: cfs_trunOutRightUp;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunOutRightUp;
+    -webkit-animation-name: cfs_trunOutRightUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutRightUp{
+@-webkit-keyframes cfs_trunOutRightUp{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3481,7 +3683,7 @@
     }
 }
 
-@keyframes trunOutRightUp{
+@keyframes cfs_trunOutRightUp{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(0, 1, 0, 0deg);
@@ -3493,16 +3695,18 @@
     }
 }
 
-.trunOutTopDown {
-    animation-name: trunOutTopDown;
+.cfs_trunOutTopDown {
+    animation-name: cfs_trunOutTopDown;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunOutTopDown;
+    -webkit-animation-name: cfs_trunOutTopDown;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutTopDown{
+@-webkit-keyframes cfs_trunOutTopDown{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3514,7 +3718,7 @@
     }
 }
 
-@keyframes trunOutTopDown{
+@keyframes cfs_trunOutTopDown{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3526,16 +3730,18 @@
     }
 }
 
-.trunOutTopUp {
-    animation-name: trunOutTopUp;
+.cfs_trunOutTopUp {
+    animation-name: cfs_trunOutTopUp;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunOutTopUp;
+    -webkit-animation-name: cfs_trunOutTopUp;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunOutTopUp{
+@-webkit-keyframes cfs_trunOutTopUp{
     0%{
         opacity: 1;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3547,7 +3753,7 @@
     }
 }
 
-@keyframes trunOutTopUp{
+@keyframes cfs_trunOutTopUp{
     0%{
         opacity: 1;
         transform : perspective(800px) rotate3d(1, 0, 0, 0deg);
@@ -3559,16 +3765,18 @@
     }
 }
 
-.trunRight {
-    animation-name: trunRight;
+.cfs_trunRight {
+    animation-name: cfs_trunRight;
     animation-duration: 0.75s;
     transform-origin: right top;
-    -webkit-animation-name: trunRight;
+    -webkit-animation-name: cfs_trunRight;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: right top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunRight{
+@-webkit-keyframes cfs_trunRight{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
@@ -3590,7 +3798,7 @@
     }
 }
 
-@keyframes trunRight{
+@keyframes cfs_trunRight{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(0, 1, 0, -360deg);
@@ -3612,16 +3820,18 @@
     }
 }
 
-.trunTop {
-    animation-name: trunTop;
+.cfs_trunTop {
+    animation-name: cfs_trunTop;
     animation-duration: 0.75s;
     transform-origin: left top;
-    -webkit-animation-name: trunTop;
+    -webkit-animation-name: cfs_trunTop;
     -webkit-animation-duration: 0.75s;
     -webkit-transform-origin: left top;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes trunTop{
+@-webkit-keyframes cfs_trunTop{
     0%{
         opacity: 0;
         -webkit-transform : perspective(800px) rotate3d(1, 0, 0, 360deg);
@@ -3642,7 +3852,7 @@
     }
 }
 
-@keyframes trunTop{
+@keyframes cfs_trunTop{
     0%{
         opacity: 0;
         transform : perspective(800px) rotate3d(1, 0, 0, 360deg);
@@ -3664,16 +3874,18 @@
     }
 }
 
-.foldIn {
-    animation-name: foldIn;
+.cfs_foldIn {
+    animation-name: cfs_foldIn;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldIn;
+    -webkit-animation-name: cfs_foldIn;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldIn{
+@-webkit-keyframes cfs_foldIn{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
@@ -3687,7 +3899,7 @@
     }
 }
 
-@keyframes foldIn{
+@keyframes cfs_foldIn{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 0, 0);
@@ -3701,16 +3913,18 @@
     }
 }
 
-.foldInDown {
-    animation-name: foldInDown;
+.cfs_foldInDown {
+    animation-name: cfs_foldInDown;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldInDown;
+    -webkit-animation-name: cfs_foldInDown;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldInDown{
+@-webkit-keyframes cfs_foldInDown{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
@@ -3724,7 +3938,7 @@
     }
 }
 
-@keyframes foldInDown{
+@keyframes cfs_foldInDown{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
@@ -3738,16 +3952,18 @@
     }
 }
 
-.foldInLeft {
-    animation-name: foldInLeft;
+.cfs_foldInLeft {
+    animation-name: cfs_foldInLeft;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldInLeft;
+    -webkit-animation-name: cfs_foldInLeft;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldInLeft{
+@-webkit-keyframes cfs_foldInLeft{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
@@ -3761,7 +3977,7 @@
     }
 }
 
-@keyframes foldInLeft{
+@keyframes cfs_foldInLeft{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
@@ -3775,16 +3991,18 @@
     }
 }
 
-.foldInRight {
-    animation-name: foldInRight;
+.cfs_foldInRight {
+    animation-name: cfs_foldInRight;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldInRight;
+    -webkit-animation-name: cfs_foldInRight;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldInRight{
+@-webkit-keyframes cfs_foldInRight{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
@@ -3798,7 +4016,7 @@
     }
 }
 
-@keyframes foldInRight{
+@keyframes cfs_foldInRight{
     0%{
         opacity: 0;
         transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
@@ -3812,16 +4030,18 @@
     }
 }
 
-.foldInUp {
-    animation-name: foldInUp;
+.cfs_foldInUp {
+    animation-name: cfs_foldInUp;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldInUp;
+    -webkit-animation-name: cfs_foldInUp;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldInUp{
+@-webkit-keyframes cfs_foldInUp{
     0%{
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
@@ -3835,7 +4055,7 @@
     }
 }
 
-@keyframes foldInUp{
+@keyframes cfs_foldInUp{
     0%{
         opacity: 0;
         transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
@@ -3849,16 +4069,18 @@
     }
 }
 
-.foldOut {
-    animation-name: foldOut;
+.cfs_foldOut {
+    animation-name: cfs_foldOut;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOut;
+    -webkit-animation-name: cfs_foldOut;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldOut{
+@-webkit-keyframes cfs_foldOut{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3872,7 +4094,7 @@
     }
 }
 
-@keyframes foldOut{
+@keyframes cfs_foldOut{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3886,16 +4108,18 @@
     }
 }
 
-.foldOutDown {
-    animation-name: foldOutDown;
+.cfs_foldOutDown {
+    animation-name: cfs_foldOutDown;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOutDown;
+    -webkit-animation-name: cfs_foldOutDown;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldOutDown{
+@-webkit-keyframes cfs_foldOutDown{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3909,7 +4133,7 @@
     }   
 }
 
-@keyframes foldOutDown{
+@keyframes cfs_foldOutDown{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3923,16 +4147,18 @@
     }
 }
 
-.foldOutLeft {
-    animation-name: foldOutLeft;
+.cfs_foldOutLeft {
+    animation-name: cfs_foldOutLeft;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOutLeft;
+    -webkit-animation-name: cfs_foldOutLeft;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldOutLeft{
+@-webkit-keyframes cfs_foldOutLeft{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3946,7 +4172,7 @@
     }   
 }
 
-@keyframes foldOutLeft{
+@keyframes cfs_foldOutLeft{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3960,16 +4186,18 @@
     }
 }
 
-.foldOutRight {
-    animation-name: foldOutRight;
+.cfs_foldOutRight {
+    animation-name: cfs_foldOutRight;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOutRight;
+    -webkit-animation-name: cfs_foldOutRight;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldOutRight{
+@-webkit-keyframes cfs_foldOutRight{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3983,7 +4211,7 @@
     }   
 }
 
-@keyframes foldOutRight{
+@keyframes cfs_foldOutRight{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -3997,16 +4225,18 @@
     }
 }
 
-.foldOutUp {
-    animation-name: foldOutUp;
+.cfs_foldOutUp {
+    animation-name: cfs_foldOutUp;
     animation-duration: 0.75s;
-    -webkit-animation-name: foldOutUp;
+    -webkit-animation-name: cfs_foldOutUp;
     -webkit-animation-duration: 0.75s;
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes foldOutUp{
+@-webkit-keyframes cfs_foldOutUp{
     0%{
         -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -4020,7 +4250,7 @@
     }   
 }
 
-@keyframes foldOutUp{
+@keyframes cfs_foldOutUp{
     0%{
         transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     }
@@ -4034,147 +4264,146 @@
     }
 }
 
-/*运动结束就停止*/
-.animationEnd{
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
 /*永久运动*/
-.animationInfinite{   
+.cfs_infinite{   
 	animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
 
 /*运动停止*/
-.animationStop{   
+.cfs_stop{   
 	animation-iteration-count: 0;
     -webkit-animation-iteration-count: 0;
 }
 
 /*运动暂停*/
-.animationPaused{   
+.cfs_paused{   
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
 }
 
 /*运动进行*/
-.animationStart{   
+.cfs_start{   
     animation-play-state: running;
     -webkit-animation-play-state: running;
 }
 
 /*运动暂停 移出进行*/
-.animationPausedHover{   
+.cfs_pausedHover{   
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
 }
 
-.animationPausedHover:hover{   
+.cfs_pausedHover:hover{   
     animation-play-state: running;
     -webkit-animation-play-state: running;
 }
 
 /*运动进行 移出暂停*/
-.animationStartHover{   
+.cfs_startHover{   
     animation-play-state: running;
     -webkit-animation-play-state: running;
 }
 
-.animationStartHover:hover{   
+.cfs_startHover:hover{   
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
 }
 
 /*运动次数*/
-.animationCount2{   
+.cfs_count2{   
 	animation-iteration-count: 2;
     -webkit-animation-iteration-count: 2;
 }
 
-.animationCount3{   
+.cfs_count3{   
 	animation-iteration-count: 3;
     -webkit-animation-iteration-count: 3;
 }
 
-.animationCount4{   
+.cfs_count4{   
 	animation-iteration-count: 4;
     -webkit-animation-iteration-count: 4;
 }
 
-.animationCount5{   
+.cfs_count5{   
 	animation-iteration-count: 5;
     -webkit-animation-iteration-count: 5;
 }
 
-.animationCount7{   
+.cfs_count7{   
 	animation-iteration-count: 7;
     -webkit-animation-iteration-count: 7;
 }
 
-.animationCount10{   
+.cfs_count10{   
 	animation-iteration-count: 10;
     -webkit-animation-iteration-count: 10;
 }
 
 /*时间周期*/
-.animationTime10{
+.cfs_time10{
 	animation-duration: 0.1s;
     -webkit-animation-duration: 0.1s;
 }
 
-.animationTime20{
+.cfs_time20{
 	animation-duration: 0.2s;
     -webkit-animation-duration: 0.2s;
 }
 
-.animationTime50{
+.cfs_time50{
 	animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
 }
 
-.animationTime100{
+.cfs_time100{
 	animation-duration: 1s;
     -webkit-animation-duration: 1s;
 }
 
-.animationTime120{
+.cfs_time120{
 	animation-duration: 1.2s;
     -webkit-animation-duration: 1.2s;
 }
 
-.animationTime150{
+.cfs_time150{
 	animation-duration: 1.5s;
     -webkit-animation-duration: 1.5s;
 }
 
-.animationTime200{
+.cfs_time175{
+	animation-duration: 1.75s;
+    -webkit-animation-duration: 1.75s;
+}
+
+.cfs_time200{
 	animation-duration: 2s;
     -webkit-animation-duration: 2s;
 }
 
 /*延迟时间*/
-.animationDelay5{
+.cfs_delay5{
 	animation-delay: 0.5s;
 	-webkit-animation-delay: 0.5s;
 }
 
-.animationDelay10{
+.cfs_delay10{
 	animation-delay: 1s;
 	-webkit-animation-delay: 1s;
 }
 
-.animationDelay20{
+.cfs_delay20{
 	animation-delay: 2s;
 	-webkit-animation-delay: 2s;
 }
 
-.animationDelay25{
+.cfs_delay25{
 	animation-delay: 2.5s;
 	-webkit-animation-delay: 2.5s;
 }
 
-.animationDelay50{
+.cfs_delay50{
 	animation-delay: 5s;
 	-webkit-animation-delay: 5s;
 }
