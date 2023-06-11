@@ -1,112 +1,263 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="baidu-site-verification" content="BG1FptcUgu" />
-		<title>酷鱼网 ｜ CFS.ANIMATE.CSS</title>
-		<meta name="description" content="css3的ANIMATE运动库 | 引入css即可实现运动效果">
-        <meta name="keywords" content="运动,animate,js,html5,css3">
-		<!-- 百度统计 -->
-		<script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="baidu-site-verification" content="BG1FptcUgu" />
+	<title>酷鱼网 ｜ CFS.ANIMATE.CSS</title>
+	<meta name="description" content="css3的ANIMATE运动库 | 引入css即可实现运动效果">
+	<meta name="keywords" content="运动,animate,js,html5,css3">
+	<!-- 百度统计 -->
+	<!-- <script>
 		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?d45b7e37ad120a6d23f44649bd9b80c3";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?d45b7e37ad120a6d23f44649bd9b80c3";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
 		})();
-		</script>
+	</script> -->
 
-		<style type="text/css">
-			body{font: 100%/1.5 "Roboto", Verdana, sans-serif, '微软雅黑';-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;overflow-x: hidden;}
-			a{color: #7b8993;text-decoration: underline;}
-			.wrap{width: 100%;text-align: center;margin-bottom: 200px;}
-			.wrap .btnBar{width: 100%;text-align: center;display: block;position: relative;}
-			.wrap .btnBar p{position: absolute;bottom:100px;left: 70%;background: #7b8993;color:#fff;margin: -20px 0 0 0;padding: 5px 10px;border-radius: 5px;}
-			.wrap h1{font-size: 63px;margin: 180px 0 60px 0;position: relative;z-index: 2;}
-			.wrap h4{font-size: 24px;padding: 10px 20px;border: 2px #7b8993 solid;display: inline-block;border-radius: 5px;cursor: pointer;color: #7b8993;margin: 10px 0 20px 0;}
-			.wrap hr{border: none;margin-top: 10px;height: 1px;background-color: #c0c8c9;background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);width: 500px;}
-			.box{width: 1010px;min-width: 1000px;margin: 80px auto 20px auto;overflow: hidden;border: 1px #eee solid;}
-			.box .category{width: 1000px;float: left; height: 30px;background: #eee;padding-left: 30px;line-height: 30px;border-left: 10px #ddd solid;}
-			.box .list{width:200px;float: left; height: 180px;border: 1px #eee solid;}
-			.box .content{width: 100%;height: 140px;line-height: 100px;text-align: center;cursor: pointer;}
-			.box .content span{display: block;}
-			.box .title{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 12px;color:#666;}
-		</style>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0
+		}
 
-		<link rel="stylesheet" type="text/css" href="CFS.Animate.min.css">
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
 
-		<script type="text/javascript" src="jquery-1.7.2.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				var timer = null;
-				var objJson = {
-					'attention' : ['cfs_beat', 'cfs_bounce', 'cfs_pulse', 'cfs_flash', 'cfs_rubberBand', 'cfs_shake', 'cfs_nod', 'cfs_swing', 'cfs_wobble', 'cfs_emphasize'],
-					'bounce' : ['cfs_bounceIn', 'cfs_bounceInLeft', 'cfs_bounceInRight', 'cfs_bounceInUp', 'cfs_bounceInDown', 'cfs_bounceOut', 'cfs_bounceOutLeft', 'cfs_bounceOutRight', 'cfs_bounceOutUp', 'cfs_bounceOutDown'],
-					'common' : ['cfs_rotate30deg', 'cfs_rotate45deg', 'cfs_rotate90deg', 'cfs_scaleX2', 'cfs_scaleY2', 'cfs_scale2', 'cfs_translateUp', 'cfs_translateRight', 'cfs_translateLeft', 'cfs_translateDown', 'cfs_skew30deg', 'cfs_skewX30deg', 'cfs_skewY30deg', 'cfs_rotateX60deg', 'cfs_rotateY60deg'],
-					'curve' : ['cfs_curveIn', 'cfs_curveInLeft', 'cfs_curveInRight', 'cfs_curveInUp', 'cfs_curveInDown', 'cfs_curveOut', 'cfs_curveOutLeft', 'cfs_curveOutRight', 'cfs_curveOutUp', 'cfs_curveOutDown'],
-					'fade' : ['cfs_fadeIn', 'cfs_fadeInLeft', 'cfs_fadeInRight', 'cfs_fadeInUp', 'cfs_fadeInDown', 'cfs_fadeOut', 'cfs_fadeOutLeft', 'cfs_fadeOutRight', 'cfs_fadeOutUp', 'cfs_fadeOutDown'],
-					'flip' : ['cfs_flipY', 'cfs_flipFlyY', 'cfs_flipFadeY', 'cfs_flipInY', 'cfs_flipOutY', 'cfs_flipX', 'cfs_flipFlyX', 'cfs_flipFadeX', 'cfs_flipInX', 'cfs_flipOutX'],
-					'lightspeed' : ['cfs_lightSpeedIn', 'cfs_lightSpeedInLeft', 'cfs_lightSpeedInRight', 'cfs_lightSpeedInUp', 'cfs_lightSpeedInDown', 'cfs_lightSpeedOut', 'cfs_lightSpeedOutLeft', 'cfs_lightSpeedOutRight', 'cfs_lightSpeedOutUp', 'cfs_lightSpeedOutDown'],
-					'rotate' : ['cfs_rotateIn', 'cfs_rotateInUpLeft', 'cfs_rotateInUpRight', 'cfs_rotateInDownLeft', 'cfs_rotateInDownRight', 'cfs_rotateOut', 'cfs_rotateOutUpLeft', 'cfs_rotateOutUpRight', 'cfs_rotateOutDownLeft', 'cfs_rotateOutDownRight'],
-					'trun' : ['cfs_trunInLeftUp', 'cfs_trunInLeftDown', 'cfs_trunLeft', 'cfs_trunInRightUp', 'cfs_trunInRightDown', 'cfs_trunOutLeftUp', 'cfs_trunOutLeftDown', 'cfs_trunRight', 'cfs_trunOutRightUp', 'cfs_trunOutRightDown', 'cfs_trunInTopUp', 'cfs_trunInTopDown', 'cfs_trunTop', 'cfs_trunInBottomUp', 'cfs_trunInBottomDown', 'cfs_trunOutTopUp', 'cfs_trunOutTopDown', 'cfs_trunBottom', 'cfs_trunOutBottomUp', 'cfs_trunOutBottomDown'],
-					'fold' : ['cfs_foldIn', 'cfs_foldInLeft', 'cfs_foldInRight', 'cfs_foldInUp', 'cfs_foldInDown', 'cfs_foldOut', 'cfs_foldOutLeft', 'cfs_foldOutRight', 'cfs_foldOutUp', 'cfs_foldOutDown'],
-					'control(在效果的后面增加控制，会出现多种效果) ' : ['cfs_flipFlyY cfs_infinite', 'cfs_flipFlyY cfs_stop', 'cfs_flipFlyY cfs_paused', 'cfs_flipFlyY cfs_start', 'cfs_flipFlyY cfs_pausedHover', 'cfs_flipFlyY cfs_startHover', 'cfs_flipFlyY cfs_count2', 'cfs_flipFlyY cfs_count3', 'cfs_flipFlyY cfs_count4', 'cfs_flipFlyY cfs_count5', 'cfs_flipFlyY cfs_count7', 'cfs_flipFlyY cfs_count10', 'cfs_flipFlyY cfs_time10', 'cfs_flipFlyY cfs_time20', 'cfs_flipFlyY cfs_time50', 'cfs_flipFlyY cfs_time100', 'cfs_flipFlyY cfs_time120', 'cfs_flipFlyY cfs_time150', 'cfs_flipFlyY cfs_time175', 'cfs_flipFlyY cfs_time200', 'cfs_flipFlyY cfs_delay5', 'cfs_flipFlyY cfs_delay10', 'cfs_flipFlyY cfs_delay20', 'cfs_flipFlyY cfs_delay25', 'cfs_flipFlyY cfs_delay50']	
-				};
-				var objArr = ['cfs_beat', 'cfs_bounce', 'cfs_pulse', 'cfs_flash', 'cfs_rubberBand', 'cfs_shake', 'cfs_nod', 'cfs_swing', 'cfs_wobble', 'cfs_emphasize', 'cfs_bounceIn', 'cfs_bounceInLeft', 'cfs_bounceInRight', 'cfs_bounceInUp', 'cfs_bounceInDown', 'cfs_bounceOut', 'cfs_bounceOutLeft', 'cfs_bounceOutRight', 'cfs_bounceOutUp', 'cfs_bounceOutDown', 'cfs_rotate30deg', 'cfs_rotate45deg', 'cfs_rotate90deg', 'cfs_scaleX2', 'cfs_scaleY2', 'cfs_scale2', 'cfs_translateUp', 'cfs_translateRight', 'cfs_translateLeft', 'cfs_translateDown', 'cfs_skew30deg', 'cfs_skewX30deg', 'cfs_skewY30deg', 'cfs_rotateX60deg', 'cfs_rotateY60deg', 'cfs_curveIn', 'cfs_curveInLeft', 'cfs_curveInRight', 'cfs_curveInUp', 'cfs_curveInDown', 'cfs_curveOut', 'cfs_curveOutLeft', 'cfs_curveOutRight', 'cfs_curveOutUp', 'cfs_curveOutDown', 'cfs_fadeIn', 'cfs_fadeInLeft', 'cfs_fadeInRight', 'cfs_fadeInUp', 'cfs_fadeInDown', 'cfs_fadeOut', 'cfs_fadeOutLeft', 'cfs_fadeOutRight', 'cfs_fadeOutUp', 'cfs_fadeOutDown', 'cfs_flipY', 'cfs_flipFlyY', 'cfs_flipFadeY', 'cfs_flipInY', 'cfs_flipOutY', 'cfs_flipX', 'cfs_flipFlyX', 'cfs_flipFadeX', 'cfs_flipInX', 'cfs_flipOutX', 'cfs_lightSpeedIn', 'cfs_lightSpeedInLeft', 'cfs_lightSpeedInRight', 'cfs_lightSpeedInUp', 'cfs_lightSpeedInDown', 'cfs_lightSpeedOut', 'cfs_lightSpeedOutLeft', 'cfs_lightSpeedOutRight', 'cfs_lightSpeedOutUp', 'cfs_lightSpeedOutDown', 'cfs_rotateIn', 'cfs_rotateInUpLeft', 'cfs_rotateInUpRight', 'cfs_rotateInDownLeft', 'cfs_rotateInDownRight', 'cfs_rotateOut', 'cfs_rotateOutUpLeft', 'cfs_rotateOutUpRight', 'cfs_rotateOutDownLeft', 'cfs_rotateOutDownRight', 'cfs_trunInLeftUp', 'cfs_trunInLeftDown', 'cfs_trunLeft', 'cfs_trunInRightUp', 'cfs_trunInRightDown', 'cfs_trunOutLeftUp', 'cfs_trunOutLeftDown', 'cfs_trunRight', 'cfs_trunOutRightUp', 'cfs_trunOutRightDown', 'cfs_trunInTopUp', 'cfs_trunInTopDown', 'cfs_trunTop', 'cfs_trunInBottomUp', 'cfs_trunInBottomDown', 'cfs_trunOutTopUp', 'cfs_trunOutTopDown', 'cfs_trunBottom', 'cfs_trunOutBottomUp', 'cfs_trunOutBottomDown', 'cfs_foldIn', 'cfs_foldInLeft', 'cfs_foldInRight', 'cfs_foldInUp', 'cfs_foldInDown', 'cfs_foldOut', 'cfs_foldOutLeft', 'cfs_foldOutRight', 'cfs_foldOutUp', 'cfs_foldOutDown'];
+		#mainPanel {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
 
-				/* 点击查看样式 */
-				$('.box').delegate('.list', 'click', function(){
-					var _this = $(this);
-					if(_this.find('.content span').hasClass(_this.find('.title span').html())){
-						_this.find('.content span').removeClass(_this.find('.title span').html());
-						clearTimeout(timer);
-						timer = setTimeout(function(){
-							_this.find('.content span').addClass(_this.find('.title span').html());
-						},10)
-					}else{
+		#mainPanel * {
+			box-sizing: initial;
+		}
+
+		#mainPanel .wrap {
+			font: 100%/1.5 "Roboto", Verdana, sans-serif, '微软雅黑';
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+			overflow-x: hidden;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 200px;
+		}
+
+		#mainPanel .wrap a {
+			color: #7b8993;
+			text-decoration: underline;
+		}
+
+		#mainPanel .wrap .btnBar {
+			width: 100%;
+			text-align: center;
+			display: block;
+			position: relative;
+		}
+
+		#mainPanel .wrap .btnBar p {
+			position: absolute;
+			bottom: 100px;
+			left: 70%;
+			background: #7b8993;
+			color: #fff;
+			margin: -20px 0 0 0;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+
+		#mainPanel .wrap h1 {
+			font-size: 63px;
+			margin: 160px 0 60px 0;
+			position: relative;
+			z-index: 2;
+		}
+
+		#mainPanel .wrap h4 {
+			font-size: 24px;
+			padding: 10px 20px;
+			border: 2px #7b8993 solid;
+			display: inline-block;
+			border-radius: 5px;
+			cursor: pointer;
+			color: #7b8993;
+			margin: 10px 0 20px 0;
+		}
+
+		#mainPanel .wrap hr {
+			border: none;
+			margin: 10px auto;
+			height: 1px;
+			background-color: #c0c8c9;
+			background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+			width: 500px;
+		}
+
+		#mainPanel .box {
+			width: 990px;
+			margin: 80px auto 20px auto;
+			overflow: hidden;
+			border: 1px #eee solid;
+		}
+
+		#mainPanel .box .category {
+			width: 1000px;
+			float: left;
+			height: 30px;
+			background: #eee;
+			padding-left: 30px;
+			line-height: 30px;
+			border-left: 10px #ddd solid;
+		}
+
+		#mainPanel .box .list {
+			width: 196px;
+			float: left;
+			height: 180px;
+			border: 1px #eee solid;
+		}
+
+		#mainPanel .box .content {
+			width: 100%;
+			height: 140px;
+			line-height: 100px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		#mainPanel .box .content span {
+			display: block;
+		}
+
+		#mainPanel .box .title {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 12px;
+			color: #666;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="./CFS.Animate.min.css">
+
+	<script type="text/javascript" src="./jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		function main() {
+			var timer = null;
+			var objJson = {
+				'attention': ['cfs_beat', 'cfs_bounce', 'cfs_pulse', 'cfs_flash', 'cfs_rubberBand', 'cfs_shake', 'cfs_nod', 'cfs_swing', 'cfs_wobble', 'cfs_emphasize'],
+				'bounce': ['cfs_bounceIn', 'cfs_bounceInLeft', 'cfs_bounceInRight', 'cfs_bounceInUp', 'cfs_bounceInDown', 'cfs_bounceOut', 'cfs_bounceOutLeft', 'cfs_bounceOutRight', 'cfs_bounceOutUp', 'cfs_bounceOutDown'],
+				'common': ['cfs_rotate30deg', 'cfs_rotate45deg', 'cfs_rotate90deg', 'cfs_scaleX2', 'cfs_scaleY2', 'cfs_scale2', 'cfs_translateUp', 'cfs_translateRight', 'cfs_translateLeft', 'cfs_translateDown', 'cfs_skew30deg', 'cfs_skewX30deg', 'cfs_skewY30deg', 'cfs_rotateX60deg', 'cfs_rotateY60deg'],
+				'curve': ['cfs_curveIn', 'cfs_curveInLeft', 'cfs_curveInRight', 'cfs_curveInUp', 'cfs_curveInDown', 'cfs_curveOut', 'cfs_curveOutLeft', 'cfs_curveOutRight', 'cfs_curveOutUp', 'cfs_curveOutDown'],
+				'fade': ['cfs_fadeIn', 'cfs_fadeInLeft', 'cfs_fadeInRight', 'cfs_fadeInUp', 'cfs_fadeInDown', 'cfs_fadeOut', 'cfs_fadeOutLeft', 'cfs_fadeOutRight', 'cfs_fadeOutUp', 'cfs_fadeOutDown'],
+				'flip': ['cfs_flipY', 'cfs_flipFlyY', 'cfs_flipFadeY', 'cfs_flipInY', 'cfs_flipOutY', 'cfs_flipX', 'cfs_flipFlyX', 'cfs_flipFadeX', 'cfs_flipInX', 'cfs_flipOutX'],
+				'lightspeed': ['cfs_lightSpeedIn', 'cfs_lightSpeedInLeft', 'cfs_lightSpeedInRight', 'cfs_lightSpeedInUp', 'cfs_lightSpeedInDown', 'cfs_lightSpeedOut', 'cfs_lightSpeedOutLeft', 'cfs_lightSpeedOutRight', 'cfs_lightSpeedOutUp', 'cfs_lightSpeedOutDown'],
+				'rotate': ['cfs_rotateIn', 'cfs_rotateInUpLeft', 'cfs_rotateInUpRight', 'cfs_rotateInDownLeft', 'cfs_rotateInDownRight', 'cfs_rotateOut', 'cfs_rotateOutUpLeft', 'cfs_rotateOutUpRight', 'cfs_rotateOutDownLeft', 'cfs_rotateOutDownRight'],
+				'trun': ['cfs_trunInLeftUp', 'cfs_trunInLeftDown', 'cfs_trunLeft', 'cfs_trunInRightUp', 'cfs_trunInRightDown', 'cfs_trunOutLeftUp', 'cfs_trunOutLeftDown', 'cfs_trunRight', 'cfs_trunOutRightUp', 'cfs_trunOutRightDown', 'cfs_trunInTopUp', 'cfs_trunInTopDown', 'cfs_trunTop', 'cfs_trunInBottomUp', 'cfs_trunInBottomDown', 'cfs_trunOutTopUp', 'cfs_trunOutTopDown', 'cfs_trunBottom', 'cfs_trunOutBottomUp', 'cfs_trunOutBottomDown'],
+				'fold': ['cfs_foldIn', 'cfs_foldInLeft', 'cfs_foldInRight', 'cfs_foldInUp', 'cfs_foldInDown', 'cfs_foldOut', 'cfs_foldOutLeft', 'cfs_foldOutRight', 'cfs_foldOutUp', 'cfs_foldOutDown'],
+				'control(在效果的后面增加控制，会出现多种效果) ': ['cfs_flipFlyY cfs_infinite', 'cfs_flipFlyY cfs_stop', 'cfs_flipFlyY cfs_paused', 'cfs_flipFlyY cfs_start', 'cfs_flipFlyY cfs_pausedHover', 'cfs_flipFlyY cfs_startHover', 'cfs_flipFlyY cfs_count2', 'cfs_flipFlyY cfs_count3', 'cfs_flipFlyY cfs_count4', 'cfs_flipFlyY cfs_count5', 'cfs_flipFlyY cfs_count7', 'cfs_flipFlyY cfs_count10', 'cfs_flipFlyY cfs_time10', 'cfs_flipFlyY cfs_time20', 'cfs_flipFlyY cfs_time50', 'cfs_flipFlyY cfs_time100', 'cfs_flipFlyY cfs_time120', 'cfs_flipFlyY cfs_time150', 'cfs_flipFlyY cfs_time175', 'cfs_flipFlyY cfs_time200', 'cfs_flipFlyY cfs_delay5', 'cfs_flipFlyY cfs_delay10', 'cfs_flipFlyY cfs_delay20', 'cfs_flipFlyY cfs_delay25', 'cfs_flipFlyY cfs_delay50']
+			};
+			var objArr = ['cfs_beat', 'cfs_bounce', 'cfs_pulse', 'cfs_flash', 'cfs_rubberBand', 'cfs_shake', 'cfs_nod', 'cfs_swing', 'cfs_wobble', 'cfs_emphasize', 'cfs_bounceIn', 'cfs_bounceInLeft', 'cfs_bounceInRight', 'cfs_bounceInUp', 'cfs_bounceInDown', 'cfs_bounceOut', 'cfs_bounceOutLeft', 'cfs_bounceOutRight', 'cfs_bounceOutUp', 'cfs_bounceOutDown', 'cfs_rotate30deg', 'cfs_rotate45deg', 'cfs_rotate90deg', 'cfs_scaleX2', 'cfs_scaleY2', 'cfs_scale2', 'cfs_translateUp', 'cfs_translateRight', 'cfs_translateLeft', 'cfs_translateDown', 'cfs_skew30deg', 'cfs_skewX30deg', 'cfs_skewY30deg', 'cfs_rotateX60deg', 'cfs_rotateY60deg', 'cfs_curveIn', 'cfs_curveInLeft', 'cfs_curveInRight', 'cfs_curveInUp', 'cfs_curveInDown', 'cfs_curveOut', 'cfs_curveOutLeft', 'cfs_curveOutRight', 'cfs_curveOutUp', 'cfs_curveOutDown', 'cfs_fadeIn', 'cfs_fadeInLeft', 'cfs_fadeInRight', 'cfs_fadeInUp', 'cfs_fadeInDown', 'cfs_fadeOut', 'cfs_fadeOutLeft', 'cfs_fadeOutRight', 'cfs_fadeOutUp', 'cfs_fadeOutDown', 'cfs_flipY', 'cfs_flipFlyY', 'cfs_flipFadeY', 'cfs_flipInY', 'cfs_flipOutY', 'cfs_flipX', 'cfs_flipFlyX', 'cfs_flipFadeX', 'cfs_flipInX', 'cfs_flipOutX', 'cfs_lightSpeedIn', 'cfs_lightSpeedInLeft', 'cfs_lightSpeedInRight', 'cfs_lightSpeedInUp', 'cfs_lightSpeedInDown', 'cfs_lightSpeedOut', 'cfs_lightSpeedOutLeft', 'cfs_lightSpeedOutRight', 'cfs_lightSpeedOutUp', 'cfs_lightSpeedOutDown', 'cfs_rotateIn', 'cfs_rotateInUpLeft', 'cfs_rotateInUpRight', 'cfs_rotateInDownLeft', 'cfs_rotateInDownRight', 'cfs_rotateOut', 'cfs_rotateOutUpLeft', 'cfs_rotateOutUpRight', 'cfs_rotateOutDownLeft', 'cfs_rotateOutDownRight', 'cfs_trunInLeftUp', 'cfs_trunInLeftDown', 'cfs_trunLeft', 'cfs_trunInRightUp', 'cfs_trunInRightDown', 'cfs_trunOutLeftUp', 'cfs_trunOutLeftDown', 'cfs_trunRight', 'cfs_trunOutRightUp', 'cfs_trunOutRightDown', 'cfs_trunInTopUp', 'cfs_trunInTopDown', 'cfs_trunTop', 'cfs_trunInBottomUp', 'cfs_trunInBottomDown', 'cfs_trunOutTopUp', 'cfs_trunOutTopDown', 'cfs_trunBottom', 'cfs_trunOutBottomUp', 'cfs_trunOutBottomDown', 'cfs_foldIn', 'cfs_foldInLeft', 'cfs_foldInRight', 'cfs_foldInUp', 'cfs_foldInDown', 'cfs_foldOut', 'cfs_foldOutLeft', 'cfs_foldOutRight', 'cfs_foldOutUp', 'cfs_foldOutDown'];
+
+			/* 点击查看样式 */
+			$('.box').delegate('.list', 'click', function () {
+				var _this = $(this);
+				if (_this.find('.content span').hasClass(_this.find('.title span').html())) {
+					_this.find('.content span').removeClass(_this.find('.title span').html());
+					clearTimeout(timer);
+					timer = setTimeout(function () {
 						_this.find('.content span').addClass(_this.find('.title span').html());
-					}
-				});
-				/* 随机切换样式 */
-				$('.wrap h4').click(function(){
-					var _randomCss = randomCss();
-					$('.wrap h1').attr('class', '');
-					$('.wrap h1').attr('class', _randomCss);
-					$('.wrap .btnBar p').html(_randomCss);
-				});
-				/* 生成列表 */
-				for(var name in objJson){
-					$('#box').append('<div class="category">' + name + '</div>');
-					for(var i = 0; i < objJson[name].length; i++){
-						var objHtml = '<div class="list"><div class="title"><span>' + objJson[name][i] + '</span></div><div class="content" style="color:' + randomRGB() + '"><span>CFS.ANIMATE.CSS</span></div></div>';
-						$('#box').append(objHtml);
-					}
-				}
-				function randomRGB(){
-					return '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6);
-				}
-				function randomCss(){
-					return objArr[Math.round(Math.random()*objArr.length)];
+					}, 10)
+				} else {
+					_this.find('.content span').addClass(_this.find('.title span').html());
 				}
 			});
-		</script>
-	</head>
-	<body>
+			/* 随机切换样式 */
+			$('.wrap h4').click(function () {
+				var _randomCss = randomCss();
+				$('.wrap h1').attr('class', '');
+				$('.wrap h1').attr('class', _randomCss);
+				$('.wrap .btnBar p').html(_randomCss);
+			});
+			/* 生成列表 */
+			for (var name in objJson) {
+				$('#box').append('<div class="category">' + name + '</div>');
+				for (var i = 0; i < objJson[name].length; i++) {
+					var objHtml = '<div class="list"><div class="title"><span>' + objJson[name][i] + '</span></div><div class="content" style="color:' + randomRGB() + '"><span>CFS.ANIMATE.CSS</span></div></div>';
+					$('#box').append(objHtml);
+				}
+			}
+			function randomRGB() {
+				return '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
+			}
+			function randomCss() {
+				return objArr[Math.round(Math.random() * objArr.length)];
+			}
+		}
+		const isInMicroApp = window.__POWERED_BY_QIANKUN__;
+
+		const render = () => {
+			$(document).ready(function () {
+				main();
+			});
+			return Promise.resolve();
+		};
+
+		(global => {
+			global['mainPanel'] = {
+				bootstrap: () => {
+					return Promise.resolve();
+				},
+				mount: () => {
+					return render();
+				},
+				unmount: () => {
+					return Promise.resolve();
+				},
+			};
+		})(window);
+		if (!isInMicroApp) {
+			//入口
+			$(document).ready(function () {
+				main();
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<div id="mainPanel">
 		<div class="wrap">
-			<span class="btnBar"><h1 class="bounceIn">CFS.ANIMATE.CSS</h1><p class="bounceIn">bounceIn</p></span>
-			<span class="btnBar"><h4 class="bounceIn">换一换</h4></span>
+			<span class="btnBar">
+				<h1 class="bounceIn">CFS.ANIMATE.CSS</h1>
+				<p class="bounceIn">bounceIn</p>
+			</span>
+			<span class="btnBar">
+				<h4 class="bounceIn">换一换</h4>
+			</span>
 			<span class="bounceIn">css3运动库 | 引入css即可实现运动效果</span>
 			<hr>
 			<span class="bounceIn">
-				<a href="/download/CFS.Animate.min.css">Download CFS.Animate.css</a>
-				&nbsp;or&nbsp; 
-				<a href="https://github.com/coolfishstudio/cfs.animate.css">View on GitHub</a>
+				<a href="https://coolfishstudio.github.io/cfs.animate.css/CFS.Animate.min.css" download="cfs.animate.css" target="_blank">Download CFS.Animate.css</a>
+				&nbsp;or&nbsp;
+				<a href="https://github.com/coolfishstudio/cfs.animate.css" target="_blank">View on GitHub</a>
 			</span>
 		</div>
-		<div class="box" id="box">	
+		<div class="box" id="box">
 		</div>
-		<footer style="text-align:center;font-size:12px;">
-	        <p>© 2015 Yves 461836324@qq.com <a href="http://www.coolfishstudio.com">酷鱼网</a></p>
-	    </footer>
+		<footer style="padding-top:1px" />
+	</div>
+</body>
+
 </html>
